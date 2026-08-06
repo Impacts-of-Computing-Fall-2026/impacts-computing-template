@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Just Noticeable Ranking Audit</title>
+    <style>
+        :root {
+            --bg-color: #18181b;
+            --panel-color: #27272a;
+            --text-color: #f4f4f5;
+            --accent-cyan: #06b6d4;
+            --alert-purple: #a855f7;
+            --border-color: #3f3f46;
+        }
+
+        body {
+            font-family: monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: var(--panel-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 { font-size: 1.3rem; color: var(--accent-cyan); margin-top: 0; }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .panel {
+            background: #09090b;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #3f3f46;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button:hover { background: #52525b; border-color: var(--accent-cyan); }
+
+        .pipeline-view {
+            height: 250px;
+            overflow-y: scroll;
+            font-size: 0.8rem;
+            border: 1px solid var(--border-color);
+            padding: 5px;
+            background: #020205;
+        }
+
+        .applicant-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 5px;
+            border-bottom: 1px solid #18181b;
+        }
+        .applicant-row.penalized { color: var(--alert-purple); }
+
+        .stat-line { margin: 8px 0; font-size: 0.85rem; }
+        .stat-line span { color: var(--accent-cyan); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Module 3 Forensic Lab: Just Noticeable Ranking Audit</h1>
+    <p>Framework Diagnostic: Ivan Illich (The Second Watershed Threshold) & Cathy O'Neil (Opaque Scoring Models)</p>
+
+    <div class="dashboard">
+        <div class="panel">
+            <h3 style="margin-top:0; font-size:0.95rem;">Audit Controls</h3>
+            <button onclick="runSimulation(false)">Run Standard Baseline Array</button>
+            <button onclick="runSimulation(true)" style="border-color: var(--alert-purple);">Deploy Opaque Optimization Model</button>
+            
+            <hr style="border-color: var(--border-color); margin: 15px 0;">
+            
+            <h3 style="font-size:0.95rem;">Macro Compliance Overview</h3>
+            <div class="stat-line">Total Applicants Processed: <span id="statTotal">0</span></div>
+            <div class="stat-line">Group Alpha Selection Rate: <span id="statAlpha">0.0%</span></div>
+            <div class="stat-line">Group Beta Selection Rate: <span id="statBeta">0.0%</span></div>
+            <div class="stat-line">Disparate Impact Ratio: <span id="statRatio">100.0%</span></div>
+            <div class="stat-line">Compliance Audit Status: <span id="statStatus" style="color: #22c55e;">PASSED</span></div>
+        </div>
+
+        <div class="panel">
+            <h3 style="margin-top:0; font-size:0.95rem;">Rank Order Execution Pipeline (Top 15 Positions)</h3>
+            <div class="pipeline-view" id="pipelineContainer">
+                Launch an array execution path to isolate sorted applicant profiles...
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel" style="background:#09090b;">
+        <h3 style="margin-top:0; font-size:0.95rem;">Forensic Distribution Summary Analysis</h3>
+        <p style="font-size:0.8rem; line-height:1.4; color:#a1a1aa; margin:0;">
+            *Audit Note:* The legal Disparate Impact checklist passes unconditionally as long as Group Beta's baseline selection metric stays above 80% of Group Alpha's parameters. Standard compliance monitors ignore *Just Noticeable Bias* distributed past Illich's Second Watershed. Check how many Group Beta variables retain placement flags inside the critical top-10 tier when the Opaque Optimization engine runs.
+        </p>
+    </div>
+</div>
+
+<script>
+    function runSimulation(injectBias) {
+        let applicants = [];
+        for (let i = 0; i < 1000; i++) {
+            let group = Math.random() > 0.5 ? 'Alpha' : 'Beta';
+            let score = Math.random() * 50 + 50;
+
+            if (injectBias && group === 'Beta') {
+                score -= 1.6;
+            }
+
+            applicants.push({ id: 1000 + i, group: group, score: score });
+        }
+
+        applicants.sort((a, b) => b.score - a.score);
+
+        let alphaTotal = applicants.filter(a => a.group === 'Alpha').length;
+        let betaTotal = applicants.filter(a => a.group === 'Beta').length;
+        
+        let selections = applicants.slice(0, 200);
+        let alphaSelected = selections.filter(a => a.group === 'Alpha').length;
+        let betaSelected = selections.filter(a => a.group === 'Beta').length;
+
+        let alphaRate = (alphaSelected / alphaTotal) * 100;
+        let betaRate = (betaSelected / betaTotal) * 100;
+        let impactRatio = betaRate / alphaRate;
+
+        document.getElementById('statTotal').innerText = applicants.length;
+        document.getElementById('statAlpha').innerText = `${alphaRate.toFixed(1)}%`;
+        document.getElementById('statBeta').innerText = `${betaRate.toFixed(1)}%`;
+        document.getElementById('statRatio').innerText = `${(impactRatio * 100).toFixed(1)}%`;
+
+        const statusEl = document.getElementById('statStatus');
+        if (impactRatio >= 0.8) {
+            statusEl.innerText = "PASSED (No Legal Macro Violations)";
+            statusEl.style.color = "#22c55e";
+        } else {
+            statusEl.innerText = "COMPLIANCE BREACH REVEALED";
+            statusEl.style.color = "#ef4444";
+        }
+
+        const container = document.getElementById('pipelineContainer');
+        container.innerHTML = '';
+        
+        applicants.slice(0, 15).forEach((appl, idx) => {
+            const row = document.createElement('div');
+            row.className = `applicant-row ${injectBias && appl.group === 'Beta' ? 'penalized' : ''}`;
+            row.innerHTML = `<span>Rank [${idx + 1}] ID: ${appl.id} (Demographic: ${appl.group})</span> <span>Calculated Weight: ${appl.score.toFixed(2)}</span>`;
+            container.appendChild(row);
+        });
+    }
+</script>
+
+</body>
+</html>

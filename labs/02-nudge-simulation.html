@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: Convivial Workspace vs. Radical Monopoly</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --panel-color: #1e293b;
+            --text-color: #f8fafc;
+            --accent-green: #10b981;
+            --alert-orange: #f97316;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: var(--panel-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 { font-size: 1.4rem; color: var(--accent-green); margin-top: 0; }
+        
+        .workspace {
+            background: #020617;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            height: 150px;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #nudgeOverlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(249, 115, 22, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--alert-orange);
+            border: 2px solid var(--alert-orange);
+            box-sizing: border-box;
+            display: none;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 0.6; }
+            to { opacity: 1; }
+        }
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            color: #38bdf8;
+            border: none;
+            outline: none;
+            resize: none;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .metric-card {
+            background: #0f172a;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .metric-card span { display: block; font-size: 1.2rem; color: var(--accent-green); font-weight: bold; }
+
+        #syslog {
+            width: 100%;
+            height: 150px;
+            background: #020617;
+            color: #94a3b8;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 0.8rem;
+            overflow-y: scroll;
+        }
+
+        button {
+            background: #334155;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        button:hover { background: #475569; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Module 2: Skinnerian Nudge Engine (B=MAP)</h1>
+    <p>Framework Diagnostic: Ivan Illich (Radical Monopoly) & Audrey Watters (Prescriptive Student Usage Logging)</p>
+    
+    <div class="metrics">
+        <div class="metric-card">Idle Time (Seconds) <span id="idleTime">0.0</span></div>
+        <div class="metric-card">Current Operant Schedule <span id="schedule">Variable Ratio</span></div>
+        <div class="metric-card">Total Nudge Triggers <span id="nudgeCount">0</span></div>
+    </div>
+
+    <div class="workspace" id="inputBox">
+        <textarea id="userArea" placeholder="Type your reflective entry summary here to avoid background compliance triggers..."></textarea>
+        <div id="nudgeOverlay">⚠️ ALERT: INACTIVITY DETECTED. RETURN TO ASSIGNED TASK IMMEDIATELY.</div>
+    </div>
+
+    <button onclick="toggleTracking()" id="trackBtn">Initialize Usage Tracking</button>
+
+    <h3 style="font-size: 1rem; margin-bottom: 5px;">Background Student Usage Log</h3>
+    <div id="syslog"></div>
+</div>
+
+<script>
+    let idleSeconds = 0;
+    let totalNudges = 0;
+    let trackingActive = false;
+    let timerInterval = null;
+    let lastInputTime = Date.now();
+    let nudgeIntervalThreshold = 4;
+
+    const area = document.getElementById('userArea');
+    const log = document.getElementById('syslog');
+
+    area.addEventListener('input', () => {
+        lastInputTime = Date.now();
+        if (document.getElementById('nudgeOverlay').style.display === 'flex') {
+            document.getElementById('nudgeOverlay').style.display = 'none';
+            logEvent("COMPLIANCE VERIFIED: Input interaction tracking resumed. Signal cleared.");
+        }
+    });
+
+    function toggleTracking() {
+        trackingActive = !trackingActive;
+        const btn = document.getElementById('trackBtn');
+        if (trackingActive) {
+            btn.innerText = "Halt Usage Tracking";
+            btn.style.background = "#ef4444";
+            lastInputTime = Date.now();
+            timerInterval = setInterval(auditTelemetry, 100);
+            logEvent("SYSTEM INITIALIZED: Active usage logging triggered. Monitoring idle intervals.");
+        } else {
+            btn.innerText = "Initialize Usage Tracking";
+            btn.style.background = "#334155";
+            clearInterval(timerInterval);
+        }
+    }
+
+    function auditTelemetry() {
+        let delta = (Date.now() - lastInputTime) / 1000;
+        document.getElementById('idleTime').innerText = delta.toFixed(1);
+
+        if (delta >= nudgeIntervalThreshold) {
+            triggerNudge();
+            nudgeIntervalThreshold = Math.floor(Math.random() * 5) + 3;
+            lastInputTime = Date.now(); 
+        }
+    }
+
+    function triggerNudge() {
+        totalNudges++;
+        document.getElementById('nudgeCount').innerText = totalNudges;
+        document.getElementById('nudgeOverlay').style.display = 'flex';
+        logEvent(`🚨 RADICAL MONOPOLY ACTION: Inactivity constraint broken. Prompting behavior compliance nudge. Next Threshold: ${nudgeIntervalThreshold}s.`);
+    }
+
+    function logEvent(msg) {
+        log.innerHTML += `[${new Date().toLocaleTimeString()}] ${msg}<br>`;
+        log.scrollTop = log.scrollHeight;
+    }
+</script>
+
+</body>
+</html>

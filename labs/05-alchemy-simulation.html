@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5: Dreyfus Alchemy Matrix</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --panel-color: #111827;
+            --text-color: #f3f4f6;
+            --accent-yellow: #f59e0b;
+            --alert-red: #ef4444;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            background: var(--panel-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        h1 { font-size: 1.3rem; color: var(--accent-yellow); margin-top: 0; }
+
+        .terminal {
+            background: #030712;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            height: 220px;
+            overflow-y: auto;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .prompt-title { color: #10b981; font-weight: bold; }
+        .system-fail { color: var(--alert-red); font-weight: bold; }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        button {
+            background: #1f2937;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: left;
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+        button:hover { background: #374151; border-color: var(--accent-yellow); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Module 5 Diagnostic: The Dreyfus Alchemy Matrix</h1>
+    <p>Framework Diagnostic: Ivan Illich (Political Inversion Limits) & Hubert Dreyfus (The Rule-Scaling Fallacy)</p>
+
+    <div class="terminal" id="termOut">
+        [SYSTEM SETUP INITIALIZED]<br>
+        Rule-Processing Layer Status: ACTIVE (Ratio Capability Maxed)<br>
+        Context Integration Matrix: NULL (Intellectus Not Detected)<br><br>
+        <span class="prompt-title">SCENARIO ENCOUNTERED:</span> An automated system must evaluate a student request for an urgent extension due to an un-documented family emergency. Click an execution node below to process the context loop...
+    </div>
+
+    <div class="options-grid">
+        <button onclick="processNode('ratio')">Node A: Execute Structured Rule Checklist (Discursive Ratio Model)</button>
+        <button onclick="processNode('ambiguity')">Node B: Inject Ambiguity Subtext (Test Human Margin Limits)</button>
+        <button onclick="processNode('fringe')">Node C: Inject Body-Relative Fringe Context (Test Relational Space)</button>
+        <button onclick="resetMatrix()">Reset Processing Array</button>
+    </div>
+</div>
+
+<script>
+    const output = document.getElementById('termOut');
+
+    function processNode(type) {
+        if (type === 'ratio') {
+            output.innerHTML = `
+                <span class="prompt-title">[EXECUTING DICTIONARY PARSE...]</span><br>
+                Rule 45B Checked: Medical certification string data required.<br>
+                Result: Token string not matching validation profile.<br>
+                System Choice: <span class="system-fail">EXTENSION DENIED. Assigning automated performance penalty flag.</span><br><br>
+                *Critical Analysis Note:* The system executed its discrete operations flawlessly. However, it completely reduced meaning to explicit rule processing, triggering what Illich defines as the <strong>Political Inversion threshold</strong>—where the tool completely replaces human care with structural bureaucracy.
+            `;
+        } else if (type === 'ambiguity') {
+            output.innerHTML = `
+                <span class="prompt-title">[INJECTING SEMANTIC AMBIGUITY LOOPS...]</span><br>
+                Student prompt contains emotional hesitation cues and contradictory time statement arrays...<br>
+                Parsing connectionist associations...<br>
+                Error: Infinite logic loop detected. Missing explicit validation criteria parameters.<br>
+                System Choice: <span class="system-fail">CRITICAL EXCEPTION. Logic loop timed out. Reverting to automated default rejection.</span><br><br>
+                *Critical Analysis Note:* Computer arrays cannot resolve ambiguous human context statements because they can only calculate pre-coded explicit parameters. They completely lack human ambiguity tolerance.
+            `;
+        } else if (type === 'fringe') {
+            output.innerHTML = `
+                <span class="prompt-title">[PARSING BODY-RELATIVE CONTEXT...]</span><br>
+                Evaluating environmental fatigue variables, emotional strain tokens, and un-articulated social dependencies...<br>
+                Warning: These properties cannot be captured via web interface fields.<br>
+                System Choice: <span class="system-fail">CONTEXT EXTRACT FAULT. The background physical world cannot be mapped into symbolic database keys.</span><br><br>
+                *Critical Analysis Note:* Human consciousness operates within an embodied contextual horizon ("fringe consciousness"). Because computers are not embodied beings in a material social world, scaling their parameters simply refines their alchemical approximation without ever achieving true convivial interaction.
+            `;
+        }
+    }
+
+    function resetMatrix() {
+        output.innerHTML = `
+            [SYSTEM RESET COMPLETE]<br>
+            Awaiting prompt injection options... Select an execution node to audit the alchemical approximation bounds.
+        `;
+    }
+</script>
+
+</body>
+</html>

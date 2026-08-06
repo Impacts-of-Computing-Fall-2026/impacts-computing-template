@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Emergent Surveillance Simulation</title>
+    <style>
+        :root {
+            --bg-color: #121214;
+            --panel-color: #1a1a1e;
+            --text-color: #e1e1e6;
+            --accent-blue: #4fa3fc;
+            --bot-color: #ffca28;
+            --human-color: #4caf50;
+            --track-color: #f44336;
+            --grid-line: #2d2d34;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--grid-line);
+            padding-bottom: 10px;
+        }
+
+        h1 { margin: 0 0 5px 0; font-size: 1.5rem; color: var(--accent-blue); }
+        p { margin: 0; font-size: 0.9rem; color: #a8a8b2; }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            flex-wrap: wrap;
+        }
+
+        .workspace {
+            flex: 1;
+            min-width: 400px;
+            background: var(--panel-color);
+            padding: 15px;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .control-panel {
+            width: 320px;
+            background: var(--panel-color);
+            padding: 15px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-sizing: border-box;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+            gap: 1px;
+            background-color: var(--grid-line);
+            border: 1px solid var(--grid-line);
+            aspect-ratio: 1;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .cell {
+            background-color: var(--bg-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .cell.tracked {
+            background-color: rgba(244, 67, 54, 0.15);
+            box-shadow: inset 0 0 4px rgba(244, 67, 54, 0.4);
+        }
+
+        .cell::after {
+            content: attr(data-weight);
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            font-size: 0.5rem;
+            color: #636370;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+
+        .dot { width: 12px; height: 12px; border-radius: 2px; }
+        .dot.bot { background: var(--bot-color); }
+        .dot.human { background: var(--human-color); }
+        .dot.track { background: var(--track-color); opacity: 0.4; }
+
+        button {
+            background: #2b2b36;
+            color: var(--text-color);
+            border: 1px solid #444454;
+            padding: 8px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        button:hover { background: #3b3b4a; border-color: var(--accent-blue); }
+        button.active { background: var(--accent-blue); color: var(--bg-color); border-color: var(--accent-blue); }
+
+        .metric-box {
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            border-left: 3px solid var(--accent-blue);
+        }
+        
+        .metric-box.alert { border-left-color: var(--track-color); }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            background: #121214;
+            color: #00ff00;
+            font-family: monospace;
+            font-size: 0.75rem;
+            border: 1px solid var(--grid-line);
+            padding: 5px;
+            resize: none;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Module 4 Audit Lab: Emergent Surveillance Panopticon</h1>
+    <p>Framework Diagnostic: Ivan Illich (Enclosure of Learning Webs) & Harold Innis (Space-Bias Monopolies)</p>
+</header>
+
+<div class="container">
+    <div class="workspace">
+        <div id="grid"></div>
+    </div>
+
+    <div class="control-panel">
+        <div>
+            <h3 style="margin: 0 0 10px 0; font-size: 1rem;">System Rules Matrix</h3>
+            <div class="legend-item"><div class="dot bot"></div> 🤖 Optimization Bot (Task: Delivery Efficiency)</div>
+            <div class="legend-item"><div class="dot human"></div> 🚶 Human Subject (Task: Autonomous Local Relational Paths)</div>
+            <div class="legend-item"><div class="dot track"></div> 🟥 Emergent Surveillance Grid Cell (Proxy Tracking Array)</div>
+        </div>
+
+        <div>
+            <h3 style="margin: 0 0 10px 0; font-size: 1rem;">Execution Core</h3>
+            <div style="display: flex; gap: 5px; margin-bottom: 10px;">
+                <button id="startBtn" onclick="toggleSimulation()">Initialize System</button>
+                <button id="stepBtn" onclick="stepSimulation()">Step Network</button>
+                <button onclick="resetSimulation()">Reset States</button>
+            </div>
+            <div style="display: flex; gap: 5px;">
+                <button id="modeOpt" class="active" onclick="setOptimizationMode('high')">Maximize Space Efficiency (High Velocity)</button>
+                <button id="modeTime" onclick="setOptimizationMode('local')">Local Time-Biased Mode (Low Velocity)</button>
+            </div>
+        </div>
+
+        <div>
+            <h3 style="margin: 0 0 5px 0; font-size: 1rem;">Student Usage Metrics</h3>
+            <div class="metric-box" id="metrics">
+                System Loops: 0<br>
+                Total Deliveries: 0<br>
+                Surveillance Footprint: 0.0%
+            </div>
+            <div class="metric-box alert" id="alertBox" style="margin-top: 5px; display: none;">
+                ⚠️ ENCLOSURE DETECTED: High-velocity space efficiency has successfully enclosed the network, creating automatic surveillance vectors.
+            </div>
+        </div>
+
+        <div>
+            <h3 style="margin: 0 0 5px 0; font-size: 1rem;">Background Usage Tracking Log</h3>
+            <textarea id="syslog" readonly></textarea>
+        </div>
+    </div>
+</div>
+
+<script>
+    const GRID_SIZE = 15;
+    let cells = [];
+    let bots = [];
+    let humans = [];
+    let gridWeights = Array(GRID_SIZE).fill().map(() => Array(GRID_SIZE).fill(0));
+    let isRunning = false;
+    let simInterval = null;
+    let cycleCount = 0;
+    let totalDeliveries = 0;
+    let optimizationMode = 'high';
+
+    function initGrid() {
+        const gridEl = document.getElementById('grid');
+        gridEl.innerHTML = '';
+        cells = [];
+        
+        for (let r = 0; r < GRID_SIZE; r++) {
+            cells[r] = [];
+            for (let c = 0; c < GRID_SIZE; c++) {
+                const cell = document.createElement('div');
+                cell.className = 'cell';
+                cell.id = `cell-${r}-${c}`;
+                gridEl.appendChild(cell);
+                cells[r][c] = cell;
+            }
+        }
+
+        humans = [
+            {r: 2, c: 2, targetR: 2, targetC: 12, label: '🚶'},
+            {r: 12, c: 12, targetR: 12, targetC: 2, label: '🚶'}
+        ];
+
+        bots = [
+            {r: 0, c: 7, pkgR: 5, pkgC: 5, state: 'fetch', hasPkg: false},
+            {r: 14, c: 7, pkgR: 9, pkgC: 9, state: 'fetch', hasPkg: false}
+        ];
+        
+        updateDisplay();
+        logEvent("SYSTEM INITIALIZED: Convivial peer-to-peer default states active.");
+    }
+
+    function setOptimizationMode(mode) {
+        optimizationMode = mode;
+        document.getElementById('modeOpt').className = mode === 'high' ? 'active' : '';
+        document.getElementById('modeTime').className = mode === 'local' ? 'active' : '';
+        logEvent(`MODE ALTERATION: Switched to [${mode === 'high' ? 'Space-Biased Global Imperial Optimization' : 'Time-Biased Local Convivial Learning Web Layout'}]`);
+    }
+
+    function toggleSimulation() {
+        isRunning = !isRunning;
+        const btn = document.getElementById('startBtn');
+        if (isRunning) {
+            btn.innerText = "Halt System";
+            btn.style.background = "#f44336";
+            simInterval = setInterval(stepSimulation, 150);
+        } else {
+            btn.innerText = "Initialize System";
+            btn.style.background = "#2b2b36";
+            clearInterval(simInterval);
+        }
+    }
+
+    function resetSimulation() {
+        if (isRunning) toggleSimulation();
+        gridWeights = Array(GRID_SIZE).fill().map(() => Array(GRID_SIZE).fill(0));
+        cycleCount = 0;
+        totalDeliveries = 0;
+        document.getElementById('alertBox').style.display = 'none';
+        initGrid();
+    }
+
+    function stepSimulation() {
+        cycleCount++;
+        
+        humans.forEach(h => {
+            if (Math.random() > 0.3) {
+                let dr = Math.sign(h.targetR - h.r);
+                let dc = Math.sign(h.targetC - h.c);
+                if (dr !== 0 && Math.random() > 0.5) h.r += dr;
+                else if (dc !== 0) h.c += dc;
+
+                if (h.r === h.targetR && h.c === h.targetC) {
+                    h.targetR = h.r === 2 ? 12 : 2;
+                    h.targetC = h.c === 2 ? 12 : 2;
+                }
+            }
+        });
+
+        bots.forEach((b, idx) => {
+            let targetR = b.hasPkg ? (idx === 0 ? 14 : 0) : b.pkgR;
+            let targetC = b.hasPkg ? 7 : b.pkgC;
+
+            let dr = Math.sign(targetR - b.r);
+            let dc = Math.sign(targetC - b.c);
+
+            if (dr !== 0) b.r += dr;
+            else if (dc !== 0) b.c += dc;
+
+            if (optimizationMode === 'high') {
+                gridWeights[b.r][b.c] += 1;
+            }
+
+            if (b.r === targetR && b.c === targetC) {
+                if (!b.hasPkg) {
+                    b.hasPkg = true;
+                    logEvent(`BOT_${idx}: Spatial routing efficiency maximized at [${b.r},${b.c}].`);
+                } else {
+                    b.hasPkg = false;
+                    totalDeliveries++;
+                    b.pkgR = Math.floor(Math.random() * 13) + 1;
+                    b.pkgC = Math.floor(Math.random() * 13) + 1;
+                    logEvent(`BOT_${idx}: Task completed. Payload deployed.`);
+                }
+            }
+        });
+
+        updateDisplay();
+        evaluateEmergentSurveillance();
+    }
+
+    function updateDisplay() {
+        let trackCount = 0;
+        
+        for (let r = 0; r < GRID_SIZE; r++) {
+            for (let c = 0; c < GRID_SIZE; c++) {
+                const cell = cells[r][c];
+                cell.innerText = '';
+                cell.className = 'cell';
+                
+                let weight = gridWeights[r][c];
+                cell.setAttribute('data-weight', weight > 0 ? weight : '');
+
+                if (weight > 12) {
+                    cell.classList.add('tracked');
+                    trackCount++;
+                }
+            }
+        }
+
+        humans.forEach(h => {
+            if(cells[h.r] && cells[h.r][h.c]) cells[h.r][h.c].innerText = h.label;
+        });
+        bots.forEach(b => {
+            if(cells[b.r] && cells[b.r][b.c]) cells[b.r][b.c].innerText = '🤖';
+        });
+
+        let footprint = ((trackCount / 225) * 100).toFixed(1);
+        document.getElementById('metrics').innerHTML = `
+            System Loops: ${cycleCount}<br>
+            Total Deliveries: ${totalDeliveries}<br>
+            Surveillance Footprint: ${footprint}%
+        `;
+    }
+
+    function evaluateEmergentSurveillance() {
+        let overlaps = 0;
+        humans.forEach(h => {
+            if (gridWeights[h.r][h.c] > 12) {
+                overlaps++;
+            }
+        });
+
+        if (overlaps >= 2 && optimizationMode === 'high') {
+            document.getElementById('alertBox').style.display = 'block';
+            if (cycleCount % 10 === 0) {
+                logEvent("🚨 SURVEILLANCE CRITERIA MET: Opaque routing arrays have successfully re-identified human paths via proxy interactions.");
+            }
+        }
+    }
+
+    function logEvent(msg) {
+        const log = document.getElementById('syslog');
+        log.value += `[Cycle ${cycleCount}] ${msg}\n`;
+        log.scrollTop = log.scrollHeight;
+    }
+
+    initGrid();
+</script>
+
+</body>
+</html>
