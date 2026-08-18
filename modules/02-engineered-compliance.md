@@ -4,7 +4,7 @@
 * **B.J. Fogg**, *Persuasive Technology: Using Computers to Change What We Think and Do* (Chapters 1–3)
     👉 [Access Book via Internet Archive Open Library](https://archive.org/details/persuasivetechno0000fogg)
 * **Audrey Watters**, *Teaching Machines: The History of Personalized Learning* (Chapter 8: "The Skinnerian Panopticon")
-    👉 [Access Text via Open Source Archive](https://archive.org/details/teaching-machines-the-history-of-personalized-learning-by-audrey-watters)
+    👉 [Access Text via Brightspace Course]([Course Materials - 2026 Fall Term Impacts of Computing (PHL-3100-01, MAC-5100-01)](https://mville.brightspace.com/d2l/le/content/27485/Home))
 * **Ivan Illich**, *Tools for Conviviality* (1973) — Chapter 2: "The Radical Monopoly"
     👉 [Access Book via Internet Archive Open Library](https://archive.org/details/toolsforconvivia0000illi)
 * **Cory Doctorow**, *"Enshittification"* Selected Essays
