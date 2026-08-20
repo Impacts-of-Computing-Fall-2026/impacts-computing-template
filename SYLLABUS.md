@@ -243,6 +243,9 @@ Because this is an asynchronous repository structure where peer evaluation and c
 1. **Athletic / Sponsored Trips:** Travel dates accompanied by a signed memo from the coach must be presented to the instructor prior to travel dates.
 2. **Religious Observances:** Advanced notice must be submitted to the instructor.
 3. **Extenuating Circumstances:** Includes family emergencies, severe illnesses, or accidents. Students will work with SHAC to document such circumstances.
+4. **Documented GitHub Platform Outage:** GitHub periodically experiences service-wide outages affecting pushes, pull requests, and related services. If a deadline falls during a confirmed outage (verifiable at [githubstatus.com](https://www.githubstatus.com/)), the deadline will be extended by the duration of the outage. No advance notice is required for this exception — email the instructor with a link to the relevant status page incident once you're able to.
+
+> **💡 A note on working during an outage:** Git itself works entirely on your own computer — `git commit` never needs GitHub to be reachable, only `git push` does. If GitHub is down, keep editing and committing locally as normal; your work is safe on your machine, and you can push everything through the moment service is restored. Losing connectivity to GitHub is not the same as losing your work.
 
 ## 📝 License
 
