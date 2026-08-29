@@ -53,16 +53,33 @@ No need to linger here — confirm everyone's done it, then move on.
 
 ---
 
-## 5. Weekly Rhythm Preview (5 min)
+## 5. This Week's Task, and a Preview of What's Next (5–10 min)
 
-Open `modules/01-foundations-decentralization-minimal-computing.md` together and walk through its shape without going deep on content:
+**This week is Module 0** (`modules/00-exploring-the-repository.md`) —
+ungraded, pass/fail. Students spend the week exploring their own repo
+and posting a genuine first reaction to the "convivial tool" claim in
+`class-commons`, before any of the theory arrives. Walk through what
+that actually involves:
+
+- Browse `docs/`, `labs/`, `modules/` — just look, nothing to run yet
+- Write a short, honest first reaction: does this feel like a
+  convivial tool, or not, and why?
+- Post it as a real thread in `class-commons` (not the throwaway
+  "hello" from step 4) and reply to at least one classmate
+
+Then, open `modules/01-foundations-decentralization-minimal-computing.md`
+together as a preview of what a normal content week looks like starting
+next week — without going deep on its actual content, that's their
+reading for Week 2:
 
 - Readings at the top
 - Theoretical context in the middle
-- A choice at the bottom: **the Developer Format** or **the Analyst Format** — remind them this is a different choice from GitHub Desktop vs. command line (that's Track A/B), and they can pick a different format each week
-- Where labs live (`labs/`) and what a submission file (`LAB-SUBMISSION.md`, copied from the template) looks like
-
-This is a preview, not a walkthrough of Module 1's actual content — that's their reading for the week.
+- A choice at the bottom: **the Developer Format** or **the Analyst
+  Format** — remind them this is a different choice from GitHub
+  Desktop vs. command line (that's Track A/B), and they can pick a
+  different format each week
+- Where labs live (`labs/`) and what a submission file
+  (`LAB-SUBMISSION.md`, copied from the template) looks like
 
 ---
 

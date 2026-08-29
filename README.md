@@ -18,6 +18,16 @@ Convivial doesn't require *public* — it requires that you, not a corporate das
 
 ---
 
+## 🚦 Where to Start
+
+Your first task, in `modules/00-exploring-the-repository.md`, isn't a
+reading — it's exploring this repository itself and posting a genuine
+first reaction in `class-commons`. Ungraded, pass/fail, and meant to
+happen alongside the Day 1 live kickoff session. Regular graded modules
+begin the following week with `modules/01-foundations-decentralization-minimal-computing.md`.
+
+---
+
 ## 🔒 How Your Repository Works
 
 Each student has their **own private GitHub repository**, created for you before the semester starts. It is not a fork, it is not public, and it will not appear in search engines. Only you and course staff can see it.

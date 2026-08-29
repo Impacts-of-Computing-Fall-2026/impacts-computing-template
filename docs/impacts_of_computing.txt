@@ -1,0 +1,36 @@
+impacts-of-computing-template/ (Root Directory — this is what create-student-repos.sh clones from)
+├── README.md
+├── SYLLABUS.md
+├── PREREQUISITES.md
+├── MARKDOWN-GUIDE.md
+├── LICENSE.md
+├── STUDENT-GUIDE.md
+├── LAB-SUBMISSION-TEMPLATE.md
+├── docs/
+│   ├── DAY-1-LIVE-SESSION.md
+│   ├── MAINTENANCE-NOTICE.md
+│   ├── PRIVACY-MODEL.md               (instructor reference, not student-facing)
+│   └── video-script-first-five-minutes.md
+├── labs/
+│   ├── 02-nudge-simulation.html
+│   ├── 03-bias-simulation.html
+│   ├── 04-surveillance-simulation.html
+│   └── 05-alchemy-simulation.html
+└── modules/
+    ├── 00-exploring-the-repository.md (Week 1, ungraded, pass/fail — no lab file)
+    ├── 01-foundations-decentralization-minimal-computing.md
+    ├── 02-engineered-compliance.md
+    ├── 03-algorithmic-bias.md
+    ├── 04-the-privacy-paradox.md
+    ├── 05-the-ai-frontier.md
+    └── 0x-exposure-lab.md          (opt-in, not numbered into weekly sequence)
+
+--------------------------------------------------------------------------
+Separate repositories (not part of the student template above):
+
+class-commons/                      (shared, all students read+comment access)
+└── (GitHub Discussions only — no course files)
+
+scripts/                            (instructor-only tooling, not distributed to students)
+├── create-student-repos.sh
+└── push-updates-to-students.sh
