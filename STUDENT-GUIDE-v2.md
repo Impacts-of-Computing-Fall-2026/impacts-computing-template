@@ -94,12 +94,20 @@ Desktop — it does the same thing with no downside.
 
 ## Getting new modules and updates
 
-Because your repository is your own private copy and not a fork, you
-won't automatically receive updates the instructor makes to the course
-template. Each week, the instructor will post a message (in class, or
-via your LMS) linking to any new files for that week. Save those files
-into the correct folder in your local copy, then Commit and Push the
-same way you would for your own work.
+The instructor pushes new modules and lab files directly into your
+repository as the semester goes on — you don't need to download or
+place any files yourself. When new material is ready, you'll see an
+announcement in `class-commons`. After that:
+
+**Track A (GitHub Desktop):** click **Fetch origin** at the top of the
+window, then **Pull origin** if it appears. The new files show up in
+your local folder automatically.
+
+**Track B (command line):** run `git pull` inside your repository
+folder.
+
+Either way, this only ever adds or updates the files the instructor
+pushes — it never touches or overwrites your own work.
 
 ---
 

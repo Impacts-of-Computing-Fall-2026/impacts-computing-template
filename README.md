@@ -47,9 +47,9 @@ git push
 
 ## 🔄 Getting New Modules and Updates
 
-Because your repository is your own copy and not a fork, new material doesn't sync automatically. Each week, the instructor will post a message linking any new files. Save them into the correct folder in your local copy, then Commit and Push the same way as your own work — no special sync procedure needed.
+The instructor pushes new modules and lab files directly into your repository as the semester progresses — you don't need to download or place any files yourself. When new material is ready, you'll see an announcement in `class-commons`; after that, just **Fetch origin** then **Pull origin** in GitHub Desktop (or `git pull` on the command line), and the new files appear in your local folder automatically. This only ever adds or updates files the instructor pushes — it never touches your own work.
 
-If you ever have a merge conflict (rare in this setup, since you're the only one editing your repo), **stop and email the instructor** rather than resolving it yourself — a conflict-resolution command applied incorrectly can silently discard your own work.
+If you ever have a merge conflict (rare in this setup, since you're the only one editing your own files), **stop and email the instructor** rather than resolving it yourself — a conflict-resolution command applied incorrectly can silently discard your own work.
 
 ---
 
