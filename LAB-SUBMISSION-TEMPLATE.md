@@ -1,6 +1,16 @@
+<!--
+HOW TO USE THIS TEMPLATE
+1. Copy this file into that week's module folder, e.g. modules/03-algorithmic-bias/
+2. Rename your copy to LAB-SUBMISSION.md (drop the -TEMPLATE suffix)
+3. Fill it in and commit/push it inside that module's folder — not at the
+   repo root, and not by editing this original template file directly.
+   Saving it inside each week's folder means every week's submission has
+   its own file and nothing gets overwritten as the semester goes on.
+-->
+
 # Lab Submission: [Module Number] — [Module Title]
 
-**Format:** Analyst Path
+**Format:** Analyst Format
 **Lab file used:** `labs/0X-name-simulation.html`
 **Date submitted:** [YYYY-MM-DD]
 

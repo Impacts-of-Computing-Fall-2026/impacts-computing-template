@@ -111,6 +111,18 @@ pushes — it never touches or overwrites your own work.
 
 ---
 
+## Submitting Analyst Format labs
+
+If you choose the Analyst Format for a given week's lab (see
+SYLLABUS.md §4), your deliverable is a `LAB-SUBMISSION.md` file. Start
+from `LAB-SUBMISSION-TEMPLATE.md` at the root of your repository — it
+has instructions at the very top (as an HTML comment, visible when you
+open the raw file) covering exactly how to copy, rename, and save it
+inside that week's module folder so nothing gets overwritten as the
+semester goes on.
+
+---
+
 ## Class discussions
 
 All class discussion happens in a separate shared repository called
