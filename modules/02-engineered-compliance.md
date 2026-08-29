@@ -4,7 +4,7 @@
 * **B.J. Fogg**, *Persuasive Technology: Using Computers to Change What We Think and Do* (Chapters 1–3)
     👉 [Access Book via Internet Archive Open Library](https://archive.org/details/persuasivetechno0000fogg)
 * **Audrey Watters**, *Teaching Machines: The History of Personalized Learning* (Chapter 8: "The Skinnerian Panopticon")
-    👉 [Access Text via Brightspace Course]([Course Materials - 2026 Fall Term Impacts of Computing (PHL-3100-01, MAC-5100-01)](https://mville.brightspace.com/d2l/le/content/27485/Home))
+    👉 [Access Text via Brightspace Course](https://mville.brightspace.com/d2l/le/content/27485/Home)
 * **Ivan Illich**, *Tools for Conviviality* (1973) — Chapter 2: "The Radical Monopoly"
     👉 [Access Book via Internet Archive Open Library](https://archive.org/details/toolsforconvivia0000illi)
 * **Cory Doctorow**, *"Enshittification"* Selected Essays
@@ -26,11 +26,11 @@ These platforms are marketed using the language of efficiency and personalizatio
 
 ## 🛠️ Weekly Lab Evaluation Options
 
-### 💻 Format A: The Developer Path (The Behavioral Trigger Script)
+### 💻 The Developer Format: The Behavioral Trigger Script
 1. Write a script that simulates a standard platform feedback loop. Build a notification engine that tracks user inactivity (in seconds) and dynamically fires automated alerts using varying intervals based on Fogg's behavior variables ($B=MAP$).
 2. **Deliverable:** Commit your script and an output log showing how your trigger intervals vary to optimize user engagement and minimize platform drop-off.
 
-### 🔍 Format B: The Analyst Path (The Manipulative Interface Audit)
+### 🔍 The Analyst Format: The Manipulative Interface Audit
 1. Launch the file `labs/02-nudge-simulation.html` inside your local browser. Click "Initialize Usage Tracking" and interact with the input box.
 2. Execute a rigorous structural audit documenting how the platform utilizes Fogg's behavior variables, Audrey Watters' criteria for Skinnerian engineering, and **Ivan Illich's definitions of a Radical Monopoly**:
     * **The Stimulus Loop:** Evaluate how the simulation uses background checks to deploy the orange overlay, monitoring your interaction drop-off.

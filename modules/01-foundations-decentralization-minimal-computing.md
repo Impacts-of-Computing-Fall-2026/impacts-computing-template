@@ -46,12 +46,12 @@ By stripping our course environment down to raw Markdown files and terminal Git 
 
 ## 🛠️ Weekly Lab Evaluation Options
 
-### 💻 Format A: The Developer Path (The Local Markdown Boilerplate)
+### 💻 The Developer Format: The Local Markdown Boilerplate
 
 1. Initialize your local Git workspace repository. Author a clean, optimized shell script that automatically parses plain-text data fields to generate a formatted HTML file entirely free of external JavaScript dependencies or styles.
 2. **Deliverable:** Commit your script and an initialized repository state to your repo. Prove that your output file size remains under 5 Kilobytes (KB) while rendering flawlessly inside a terminal-based web browser environment.
 
-### 🔍 Format B: The Analyst Path (The Convivial Workspace Audit)
+### 🔍 The Analyst Format: The Convivial Workspace Audit
 
 1. Select a standard public-facing web platform or institutional portal enforced by an institution or business you interact with daily.
 2. Run a comparative performance audit measuring it against Ivan Illich's definitions of **Convivial vs. Manipulative tools** and the criteria for **Digital Redlining**:

@@ -43,14 +43,14 @@ In Chapter 6 of *Deschooling Society*, Ivan Illich mapped out an alternative arc
 
 ## 🛠️ Weekly Lab Evaluation Options
 
-### 💻 Format A: The Developer Path (The Emergent Surveillance Forensic Audit)
+### 💻 The Developer Format: The Emergent Surveillance Forensic Audit
 
 1. Open `labs/04-surveillance-simulation.html` inside your local browser workspace.
 2. **Experiment Run 1 (Space-Biased Mode):** Click "Maximize Space Efficiency (High Velocity)." Then click "Initialize System" and let it run for roughly 45 seconds (about 300 cycles at the simulation's default speed) — or click "Step Network" 300 times manually if you'd rather watch each step. Note how quickly the system logs data weights along the center transit lines.
 3. **Experiment Run 2 (Time-Biased Mode):** Click "Reset States." Click "Local Time-Biased Mode" and repeat another ~300 cycles. Note what happens to the tracking weights when global spatial path metrics are ignored.
 4. **The Deliverable:** Commit a localized markdown log file (`LAB-SUBMISSION.md`) to your repository. Document the precise cycle number where the "Emergent Surveillance Matrix Alert" triggers during Run 1. Copy the syslog outputs and analyze—using the **Nguyen et al. (AIES) findings** and **Ivan Illich's network criteria**—how centralized tracking independently emerges from high-velocity data sorting, even when no explicit instructions tell the code to spy on users.
 
-### 🔍 Format B: The Analyst Path (The Imperial Cloud vs. Learning Web Audit)
+### 🔍 The Analyst Format: The Imperial Cloud vs. Learning Web Audit
 
 1. Select an online interaction space that you occupy daily (e.g., a fast-paced, algorithmic feed like TikTok/X, or a localized, asynchronous text network like our private course repositories).
 2. Run a forensic infrastructure audit evaluating the space through **Harold Innis's Media Bias Matrix**, **Michel Foucault's Panopticism**, and **Ivan Illich's Learning Web**:

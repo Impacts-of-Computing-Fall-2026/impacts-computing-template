@@ -1,13 +1,11 @@
 # Module 5: The AI Frontier and the Human Person
 
 ## 📖 Core Readings This Week
-* **Hubert L. Dreyfus**, *Alchemy and Artificial Intelligence* (1965 RAND Corporation Technical Report)
-* **Pope Leo XIV**, *Magnifica Humanitas: On Safeguarding the Human Person in the Time of AI* (2026 Social Encyclical, Sections 1–25)
-* **Emily M. Bender, Timnit Gebru, et al.**, *"On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"* (ACM FAccT)
-* **AlgorithmWatch Report**, *The AI Climate Hoax: Behind the Curtain of How Big Tech Greenwashes Impacts* (June 2026)
-* 📺 *Media Screening:* Pope Leo XIV's AI Encyclical Explained (w/ Fr. Gregory Pine)
-
-*(Direct links for this week's readings to be added — check the class-commons repository for updates if you don't see them yet.)*
+* **Hubert L. Dreyfus**, *Alchemy and Artificial Intelligence* (1965 RAND Corporation Technical Report) — [Official RAND page](https://www.rand.org/pubs/papers/P3244.html)
+* **Pope Leo XIV**, *Magnifica Humanitas: On Safeguarding the Human Person in the Time of AI* (2026 Encyclical) — [Official Vatican text](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html)
+* **Emily M. Bender, Timnit Gebru, et al.**, *"On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"* (ACM FAccT) — [Author's free copy](https://faculty.washington.edu/ebender/papers/Stochastic_Parrots.pdf)
+* **AlgorithmWatch Report**, *The AI Climate Hoax: Behind the Curtain of How Big Tech Greenwashes Impacts* (June 2026) — [Read the report](https://algorithmwatch.org/en/ai-climate-hoax/)
+* 📺 *Media Screening:* [Pope Leo XIV's AI Encyclical Explained (w/ Fr. Gregory Pine)](https://www.youtube.com/watch?v=cpptgvohfZc)
 
 ---
 
@@ -43,12 +41,12 @@ This corporate enclosure hides a massive material cost. While tech conglomerates
 
 ## 🛠️ Weekly Lab Evaluation Options
 
-### 💻 Format A: The Developer Path (The Material Carbon Estimator)
+### 💻 The Developer Format: The Material Carbon Estimator
 
 1. Write a local automation script (`carbon_estimator.py`) that acts as an infrastructure carbon calculator. Your script must read a local text file processing load, estimate processing durations across different server topologies, and compute the estimated grid carbon output based on the active utility emission profiles exposed in the June 2026 AlgorithmWatch report.
 2. **Deliverable:** Commit your script and an execution configuration model. Contrast the environmental efficiency claims of central commercial cloud architectures against the carbon footprint of a localized, self-hosted campus server node.
 
-### 🔍 Format B: The Analyst Path (The Alchemy Limit Assessment)
+### 🔍 The Analyst Format: The Alchemy Limit Assessment
 
 1. Open `labs/05-alchemy-simulation.html` in your workspace browser.
 2. Run your audit sequence through **Node A (Ratio Model)**, **Node B (Ambiguity Matrix)**, and **Node C (Fringe Context Matrix)**, in any order — each is independent and doesn't build on the previous selection. Observe the automated engine output responses and exceptions for each.

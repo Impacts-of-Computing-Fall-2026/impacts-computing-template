@@ -152,6 +152,27 @@
             resize: none;
             box-sizing: border-box;
         }
+
+        .btn-row {
+            display: flex;
+            gap: 5px;
+        }
+
+        @media (max-width: 780px) {
+            body { padding: 12px; }
+            header { margin-bottom: 14px; }
+            h1 { font-size: 1.15rem; }
+            p { font-size: 0.8rem; }
+            .container { gap: 14px; }
+            .workspace { min-width: 0; width: 100%; padding: 10px; }
+            .control-panel { width: 100%; padding: 12px; gap: 12px; }
+            #grid { max-width: 100%; }
+            .btn-row { flex-wrap: wrap; }
+            .btn-row button { flex: 1 1 auto; font-size: 0.75rem; padding: 8px 6px; }
+            .legend-item { font-size: 0.78rem; }
+            .metric-box { font-size: 0.72rem; }
+            textarea { height: 100px; font-size: 0.68rem; }
+        }
     </style>
 </head>
 <body>
@@ -176,12 +197,12 @@
 
         <div>
             <h3 style="margin: 0 0 10px 0; font-size: 1rem;">Execution Core</h3>
-            <div style="display: flex; gap: 5px; margin-bottom: 10px;">
+            <div class="btn-row" style="margin-bottom: 10px;">
                 <button id="startBtn" onclick="toggleSimulation()">Initialize System</button>
                 <button id="stepBtn" onclick="stepSimulation()">Step Network</button>
                 <button onclick="resetSimulation()">Reset States</button>
             </div>
-            <div style="display: flex; gap: 5px;">
+            <div class="btn-row">
                 <button id="modeOpt" class="active" onclick="setOptimizationMode('high')">Maximize Space Efficiency (High Velocity)</button>
                 <button id="modeTime" onclick="setOptimizationMode('local')">Local Time-Biased Mode (Low Velocity)</button>
             </div>

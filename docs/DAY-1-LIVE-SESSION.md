@@ -59,7 +59,7 @@ Open `modules/01-foundations-decentralization-minimal-computing.md` together and
 
 - Readings at the top
 - Theoretical context in the middle
-- A choice at the bottom: **Format A (Developer)** or **Format B (Analyst)** — remind them this is a different choice from GitHub Desktop vs. command line, and they can pick a different format each week
+- A choice at the bottom: **the Developer Format** or **the Analyst Format** — remind them this is a different choice from GitHub Desktop vs. command line (that's Track A/B), and they can pick a different format each week
 - Where labs live (`labs/`) and what a submission file (`LAB-SUBMISSION.md`, copied from the template) looks like
 
 This is a preview, not a walkthrough of Module 1's actual content — that's their reading for the week.

@@ -59,19 +59,23 @@ git config user.email "jsmith22@users.noreply.github.com"
 GitHub to every account — it forwards without exposing the real inbox.)
 
 **5. Submission happens inside the student's own repo, not against yours.**
-Students commit directly to their private repo, or open a PR from a
-`submission` branch to `main` *within their own repo* if you want a
-review step. This avoids ever mixing multiple students' identities into
-one shared, browsable list of PRs.
+For weekly labs, students just commit and push directly to `main` in their
+own repo — no PR needed, since there's no one else in that repo to review
+past. (A branch-and-PR pattern is used later, but only as an optional
+review step for the Week 13–15 capstone, not the weekly default.) This
+avoids ever mixing multiple students' identities into one shared,
+browsable list of PRs.
 
-**6. Peer review, if you want it, is handled out-of-band.**
-Since repos are now isolated and private, classmates can't naturally see
-each other's work (a feature, not a bug, for privacy — but a loss for
-peer learning). If peer review matters to your pedagogy, rotate pairs
-manually each module and add the paired student as a temporary
-collaborator on just that repo for the relevant window, or maintain a
-lightweight shared `modules/xx/discussion.md` file per module in a
-*separate*, intentionally shared repo used only for discussion threads.
+**6. General class discussion is handled by a separate shared repo.**
+Since student repos are now isolated and private, classmates can't
+naturally see each other's work (a feature, not a bug, for privacy). The
+`class-commons` repo, with GitHub Discussions enabled, is the actual
+solution that got built for this — `create-student-repos.sh` creates it
+automatically and adds every student as a read/comment collaborator. If
+you want true peer *review* of a specific piece of work (not just general
+discussion), that's a separate, narrower thing: rotate pairs manually for
+a given module and add the paired student as a temporary collaborator on
+just that one repo for the relevant window.
 
 ## What changes about the Illich framing
 
@@ -83,10 +87,12 @@ still delivers that. Public-by-default forking was never required to make
 the point, and it was the thing actually undermining student autonomy by
 exposing their work without meaningful consent.
 
-## On the Codeberg migration
+## On the Codeberg migration — resolved
 
-Consider making the week-8 migration optional or a smaller pilot rather
-than a required whole-class event. If you keep it, the private-repo
-model transfers directly: Codeberg supports the same private-org,
-private-repo pattern, so the mapping and pseudonym setup above doesn't
-need to change, just the remote URL.
+This was an open question when this doc was first drafted; it's since
+been resolved. The Week 8 migration is an **optional, small-group pilot**,
+not a required whole-class event — see `docs/MAINTENANCE-NOTICE.md` for
+the finalized version students actually see. The private-repo model
+transfers directly for anyone who opts in: Codeberg supports the same
+private-org, private-repo pattern, so the mapping and pseudonym setup
+above doesn't need to change, just the remote URL.
