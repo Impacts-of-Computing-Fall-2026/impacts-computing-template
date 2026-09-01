@@ -39,13 +39,27 @@ Spend 15–20 minutes browsing your repo like you would a new city:
   the shape of what a normal week's reading and lab assignment will
   look like starting next week.
 
+**Step 2.5 — See what a page learns about you without asking.**
+Visit [kuber.studio/cookie](https://kuber.studio/cookie/) — a small, useful,
+independently-built demo that shows everything a website can learn
+about you the instant it loads, with no cookies, no permission prompt,
+and no click required on your part. This is the passive counterpart to
+Step 3 below: rather than choosing to make something public, this is
+what gets collected whether you choose to or not. Note one or two
+things that surprised you — you'll fold this into your reaction in the
+next step.
+
 **Step 3 — Write a first reaction (150–300 words).**
 Before you've read a page of Illich, does the "convivial tool" claim
 actually hold up, based only on what you just saw? You don't need to
 resolve this — a genuine "I'm skeptical because..." or "this already
 feels different from Canvas because..." is exactly what this step is
 for. Give at least one concrete reason, pointing at something specific
-you noticed, not just a general impression.
+you noticed, not just a general impression. Include what surprised you
+(or didn't) about the cookie demo in Step 2.5, and whether it changes
+how you think about "convivial" as a claim — a tool that respects your
+privacy by design looks different next to a page that reads your
+device before you've clicked anything.
 
 **Step 4 — Post it in `class-commons`.**
 This is your first real Discussion post — not the throwaway "hello"
@@ -63,6 +77,14 @@ Discussions tab. That's the entire deliverable.
 
 ## Instructor notes
 
+- **Before assigning this module, personally visit the Step 2.5 link
+  and check your browser's Network tab (right-click → Inspect →
+  Network) to confirm nothing actually leaves your machine beyond
+  loading the page.** It's a small, independently-built site, not an
+  institutional tool — worth the same scrutiny you'd give anything
+  else students are sent to, especially in a privacy-focused course.
+  If you're not comfortable with what you find, drop Step 2.5 entirely
+  — the module works fine without it.
 - Checking completion is just checking `class-commons` activity for
   the week — no separate submission to track.
 - Expect a range of first reactions, including skeptical or
