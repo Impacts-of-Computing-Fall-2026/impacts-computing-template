@@ -36,6 +36,23 @@ graph TD
 
 These platforms are marketed using the language of efficiency and personalization. However, as Watters notes, their codebases are engineered to monitor student usage data, track user cadence, and nudge students into predictable execution channels. This mirrors the Vatican's warning in *Antiqua et nova* regarding **"Rapidification"** (§67) — the systematic acceleration of tasks that deskills the human operator and forces them to adapt to the frantic pace of an opaque machine pipeline.
 
+<details>
+<summary>🔍 Go deeper: does a Radical Monopoly need a villain?</summary>
+
+It's tempting to read "Radical Monopoly" as a story about a bad actor —
+a company that deliberately schemes to trap you. Illich's point is
+actually sharper than that, and more unsettling: a Radical Monopoly can
+emerge with nobody intending it. Each individual decision along the way
+might be locally reasonable — a school adopts a tracking dashboard to
+"help" struggling students; a platform adds a feature to "improve"
+engagement. No single decision is the villain. The monopoly is the
+*sum* of many small, defensible choices, none of which anyone can
+point to and say "that one was the problem." This is what makes it
+hard to fight through individual accountability — there's rarely one
+person or one decision to hold responsible.
+
+</details>
+
 ---
 
 ## 🛠️ Weekly Lab Evaluation Options

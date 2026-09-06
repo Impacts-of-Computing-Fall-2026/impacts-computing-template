@@ -41,6 +41,22 @@ In Chapter 6 of *Deschooling Society*, Ivan Illich mapped out an alternative arc
 
 Your own private, self-owned course repository — rather than a corporate learning dashboard — is a small-scale version of this same principle: you control your environment, and no one is harvesting your usage data to optimize engagement.
 
+<details>
+<summary>🔍 Go deeper: why Illich didn't stop at critique</summary>
+
+A lot of surveillance theory — Foucault's Panopticon included — is
+diagnostic: it names what's wrong without necessarily proposing what
+right looks like. Illich takes an extra step that's easy to miss: the
+Learning Web isn't just "the opposite of the Panopticon," it's a
+specific, positive architecture he thought could actually work — peer
+matching, skill exchanges, and directories built without a central
+authority deciding who gets to learn what from whom. It's worth asking,
+as you read Chapter 6, whether Illich's alternative is genuinely
+workable at scale, or whether it depends on a smaller, more localized
+kind of community than a modern institution can realistically offer.
+
+</details>
+
 ---
 
 ## 🛠️ Weekly Lab Evaluation Options

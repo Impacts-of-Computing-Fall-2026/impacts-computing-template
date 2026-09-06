@@ -49,6 +49,26 @@ This alchemical limit maps directly to Ivan Illich's concept of **Political Inve
 
 This corporate enclosure hides a massive material cost. While tech conglomerates market AI as an abstract, environmentally clean cloud layer, **AlgorithmWatch's 2026 investigative data** exposes the material reality: a massive surge in carbon emissions and hidden local water consumption, combined with systematic corporate lobbying to keep data center utility metrics hidden from public NGO scrutiny.
 
+<details>
+<summary>🔍 Go deeper: does a 1965 critique still apply to a 2026 model?</summary>
+
+This is a fair challenge to raise, and it's genuinely contested, not
+settled. Dreyfus was writing about *symbolic* AI — systems built from
+hand-coded logical rules, exactly the kind of "discursive rule
+processing" his critique targets directly. Modern large language models
+work completely differently: they're *statistical*, trained on patterns
+in enormous amounts of text rather than programmed with explicit rules.
+Some researchers argue this makes Dreyfus's critique obsolete — a
+statistical system isn't doing "dictionary parsing" the way his
+1965 target was. Others argue the deeper point survives the technical
+shift: whether the rules are hand-coded or learned from data, the
+system still has no body, no history, and no stake in the world it's
+reasoning about — which is what "fringe consciousness" was actually
+about. Where you land on this is worth forming your own view on, not
+just inheriting one side.
+
+</details>
+
 ---
 
 ## 🛠️ Weekly Lab Evaluation Options

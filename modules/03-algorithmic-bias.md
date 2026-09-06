@@ -40,6 +40,22 @@ graph TD
 
 The penalty passes the legal test and fails the actual people affected — that gap is the whole point of "Just Noticeable" bias.
 
+<details>
+<summary>🔍 Go deeper: why this is genuinely hard to legislate against</summary>
+
+It's tempting to think the fix is just "lower the compliance threshold"
+or "check more carefully." But the 80% rule (or any similar
+threshold-based test) has to draw a line somewhere, and wherever it
+draws that line, a sufficiently small, sufficiently well-targeted
+penalty can be built to sit just inside it. This isn't a loophole
+regulators forgot to close — it's closer to a structural feature of
+*any* threshold-based compliance test. Alkhathlan et al.'s contribution
+isn't just "here's a bias," it's "here's a bias engineered to be
+mathematically invisible to the exact kind of check the law actually
+uses." That's a much harder problem than catching a one-off bad actor.
+
+</details>
+
 ---
 
 ## 🛠️ Weekly Lab Evaluation Options
