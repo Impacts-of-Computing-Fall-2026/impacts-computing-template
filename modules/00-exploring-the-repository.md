@@ -1,14 +1,12 @@
 # Module 0: Exploring the Repository
 ### Before the Theory, the Thing Itself
 
-**Placement:** Week 1, running alongside the Day 1 live kickoff session.
-This replaces Module 1 as Week 1's assignment — Module 1's actual
-readings begin Week 2 (see `docs/DAY-1-LIVE-SESSION.md` for how these
-connect).
-
-**Format:** Individual, ungraded / pass-fail on completion only. No
-content quality is assessed — only that you explored, wrote something
-honest, and engaged with at least one classmate.
+| | |
+|---|---|
+| **Placement** | Week 1, running alongside the Day 1 live kickoff session |
+| **Replaces** | Module 1 as Week 1's assignment — Module 1's readings begin Week 2 |
+| **Format** | Individual, ungraded / pass-fail on completion only |
+| **Graded on** | Completion only — that you explored, wrote something honest, and engaged with at least one classmate |
 
 ---
 
@@ -20,6 +18,22 @@ and forming your own initial opinion about it — so that when the
 theory arrives next week, you already have a real reaction to test it
 against, rather than absorbing the framework and the object it
 describes at the same moment.
+
+> ❓ **The question this whole module is actually testing:** is this
+> repository genuinely a *convivial tool*, in Ivan Illich's sense —
+> or does it just look that way? You get to decide, based on nothing
+> but what you actually observe this week.
+
+## This week's arc
+
+```mermaid
+graph LR
+    A["1️⃣ Read the<br/>repo's framing"] --> B["2️⃣ Explore<br/>docs/labs/modules"]
+    B --> C["2.5️⃣ See what a<br/>page learns passively"]
+    C --> D["3️⃣ Write your<br/>first reaction"]
+    D --> E["4️⃣ Post in<br/>class-commons"]
+    E --> F["5️⃣ Reply to a<br/>classmate"]
+```
 
 ## Instructions
 
@@ -40,7 +54,7 @@ Spend 15–20 minutes browsing your repo like you would a new city:
   look like starting next week.
 
 **Step 2.5 — See what a page learns about you without asking.**
-Visit [kuber.studio/cookie](https://kuber.studio/cookie/) — a small, useful,
+Visit [kuber.studio/cookie](https://kuber.studio/cookie/) — a small,
 independently-built demo that shows everything a website can learn
 about you the instant it loads, with no cookies, no permission prompt,
 and no click required on your part. This is the passive counterpart to
@@ -70,6 +84,12 @@ A genuine reply, not just "I agree" — reference something specific
 they said.
 
 ## What "done" looks like
+
+- [ ] Read `README.md` and `SYLLABUS.md` §1
+- [ ] Browsed `docs/`, `labs/`, and `modules/`
+- [ ] Visited the Step 2.5 cookie demo
+- [ ] Posted a genuine first-reaction thread in `class-commons` (150–300 words)
+- [ ] Replied to at least one classmate's post
 
 There's no `LAB-SUBMISSION.md` for this module — completion is your
 `class-commons` post plus at least one reply, both visible in the
