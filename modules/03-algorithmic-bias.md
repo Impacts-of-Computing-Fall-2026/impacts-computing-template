@@ -1,14 +1,10 @@
 # Module 3: Algorithmic Systems & The Optimization Trap
 
 ## 📖 Core Readings This Week
-* **Cathy O'Neil**, *Weapons of Math Destruction* (Chapters 1–3)
-    👉 [Internet Archive Open Community Library](https://archive.org/details/weaponsofmathdes0000onei)
-* **Ivan Illich**, *Tools for Conviviality* (1973) — Chapter 1: "The Two Watersheds"
-    👉 [Access Book via Internet Archive Open Library](https://archive.org/details/toolsforconvivia0000illi)
-* **AlgorithmWatch**, *Managed by the Algorithm: How AI is Changing the Way We Work* (Workplace Automation Index)
-    👉 [AlgorithmWatch NGO Platform](https://algorithmwatch.org/en/automated-decision-making-workplace/)
-* **Alkhathlan et al.**, *"Exploring 'Just Noticeable' Group Fairness in Rankings"* (Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society)
-    👉 [AAAI Digital Library Open Access](https://ojs.aaai.org/)
+* **Cathy O'Neil**, *Weapons of Math Destruction* (Chapters 1–3) — [Borrow via Internet Archive](https://archive.org/details/weaponsofmathdes0000onei)
+* **Ivan Illich**, *Tools for Conviviality* (1973) — Chapter 1: "The Two Watersheds" — [Full text via Internet Archive](https://archive.org/details/toolsforconvivia0000illi)
+* **AlgorithmWatch**, *Managed by the Algorithm: How AI is Changing the Way We Work* (Workplace Automation Index) — [Read on AlgorithmWatch](https://algorithmwatch.org/en/automated-decision-making-workplace/)
+* **Alkhathlan, Shrestha, Harrison & Rundensteiner**, *"Exploring 'Just Noticeable' Group Fairness in Rankings"* (AIES 2025) — [Official proceedings link](https://ojs.aaai.org/index.php/AIES/article/view/36532)
 
 ---
 
@@ -16,17 +12,43 @@
 
 We expand Cathy O'Neil's structural analysis of automated models by exploring how algorithms systematically reshape modern labor. Independent investigations by **AlgorithmWatch** demonstrate that automated decision-making (ADM) systems are actively deployed to continuously log employee performance data, track physical movement telemetry, and generate automated retention scores that predict which workers to target for termination.
 
-To fully conceptualize this threat, we apply Ivan Illich's historical law of **The Second Watershed**. Illich posits that every major tool or socio-technical system passes through two critical thresholds:
-1. **The First Watershed:** The development of a tool optimizes human labor, solves historical crises, and genuinely empowers individual human expression.
-2. **The Second Watershed:** As the tool scales, it becomes institutionalized, bureaucratized, and highly optimized by technical elites. Past this line, the tool morphs into a destructive force that strips human autonomy, limits options, and forces society to serve the tool rather than vice versa.
+To fully conceptualize this threat, we apply Ivan Illich's historical law of **The Two Watersheds**:
+
+```mermaid
+graph LR
+    A["🌱 First Watershed<br/>Tool optimizes labor,<br/>solves real problems,<br/>empowers the individual"] --> B["📈 The tool scales"]
+    B --> C{"Institutionalized &<br/>optimized by technical elites"}
+    C --> D["⚠️ Second Watershed<br/>Tool strips autonomy,<br/>forces society to serve it"]
+
+    style A fill:#10b981,color:#fff
+    style D fill:#ef4444,color:#fff
+```
 
 Modern optimization algorithms, predictive hiring platforms, and deep ranking models have crossed this Second Watershed. They no longer connect people or ease burdens; they function as invisible corporate managers that flatten human lives into optimized, un-auditable data matrices.
 
-This manifests clearly in the ACM/AIES discovery of **"Just Noticeable" Bias** (Alkhathlan et al.). Optimization models rarely fail in catastrophic or obvious ways. Instead, deep ranking networks introduce tiny, incremental downward adjustments to marginalized groups. These shifts pass macro-level compliance checkers perfectly but systematically segregate outcomes at scale.
+This manifests clearly in the ACM/AIES discovery of **"Just Noticeable" Bias** (Alkhathlan et al.). Optimization models rarely fail in catastrophic or obvious ways — instead, they introduce a penalty too small to trip a compliance check, but large enough to matter once concentrated at the top of a ranked list:
+
+```mermaid
+graph TD
+    A["1,000 applicants,<br/>roughly even split by group"] --> B["Tiny -1.6 point penalty<br/>applied to one group only"]
+    B --> C["Sorted and ranked"]
+    C --> D["Macro compliance check<br/>(80% threshold rule)"]
+    D -->|"✅ PASSES<br/>(deviation too small to trip it)"| E["Legally 'fine'"]
+    C --> F["Top 10–15 positions"]
+    F -->|"❌ Penalized group<br/>almost entirely absent"| G["Structural exclusion<br/>where it actually matters"]
+```
+
+The penalty passes the legal test and fails the actual people affected — that gap is the whole point of "Just Noticeable" bias.
 
 ---
 
 ## 🛠️ Weekly Lab Evaluation Options
+
+| | 💻 Developer Format | 🔍 Analyst Format |
+|---|---|---|
+| **What you do** | Build your own ranking simulation with a hidden penalty | Run the provided simulation and interpret its output |
+| **Best for** | Students who want to construct the mechanism | Students who want to audit an existing one |
+| **Deliverable** | Script + distribution graph | `LAB-SUBMISSION.md` with both test runs recorded |
 
 ### 💻 The Developer Format: The Just-Noticeable Ranking Audit
 1. Write a script to simulate an institutional recruitment portal that ranks 1,000 applicants based on a synthetic performance score variable.

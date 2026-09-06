@@ -1,0 +1,117 @@
+# Module 0: Exploring the Repository
+### Before the Theory, the Thing Itself
+
+| | |
+|---|---|
+| **Placement** | Week 1, running alongside the Day 1 live kickoff session |
+| **Replaces** | Module 1 as Week 1's assignment — Module 1's readings begin Week 2 |
+| **Format** | Individual, ungraded / pass-fail on completion only |
+| **Graded on** | Completion only — that you explored, wrote something honest, and engaged with at least one classmate |
+
+---
+
+## Learning objective
+
+Before you read Illich, Franklin, or any of the theory this course is
+built on, spend a week just looking at the tool you'll be using —
+and forming your own initial opinion about it — so that when the
+theory arrives next week, you already have a real reaction to test it
+against, rather than absorbing the framework and the object it
+describes at the same moment.
+
+> ❓ **The question this whole module is actually testing:** is this
+> repository genuinely a *convivial tool*, in Ivan Illich's sense —
+> or does it just look that way? You get to decide, based on nothing
+> but what you actually observe this week.
+
+## This week's arc
+
+```mermaid
+graph LR
+    A["1️⃣ Read the<br/>repo's framing"] --> B["2️⃣ Explore<br/>docs/labs/modules"]
+    B --> C["2.5️⃣ See what a<br/>page learns passively"]
+    C --> D["3️⃣ Write your<br/>first reaction"]
+    D --> E["4️⃣ Post in<br/>class-commons"]
+    E --> F["5️⃣ Reply to a<br/>classmate"]
+```
+
+## Instructions
+
+**Step 1 — Read the repo's own framing.**
+Open `README.md` and Section 1 of `SYLLABUS.md` in your own repository.
+Notice the claim being made: that this repository is a *convivial
+tool*, not a manipulative one, in Ivan Illich's sense — and that this
+is supposed to be true by design, not just asserted.
+
+**Step 2 — Actually look around.**
+Spend 15–20 minutes browsing your repo like you would a new city:
+- Open the `docs/`, `labs/`, and `modules/` folders and see what's there.
+- Open one lab file (any of the `.html` files in `labs/`) in a text
+  editor — not to run it yet, just to see what's actually inside it.
+  You don't need to understand the code.
+- Skim one full module file (try `modules/01-foundations-...md`) to see
+  the shape of what a normal week's reading and lab assignment will
+  look like starting next week.
+
+**Step 2.5 — See what a page learns about you without asking.**
+Visit [kuber.studio/cookie](https://kuber.studio/cookie/) — a small,
+independently-built demo that shows everything a website can learn
+about you the instant it loads, with no cookies, no permission prompt,
+and no click required on your part. This is the passive counterpart to
+Step 3 below: rather than choosing to make something public, this is
+what gets collected whether you choose to or not. Note one or two
+things that surprised you — you'll fold this into your reaction in the
+next step.
+
+**Step 3 — Write a first reaction (150–300 words).**
+Before you've read a page of Illich, does the "convivial tool" claim
+actually hold up, based only on what you just saw? You don't need to
+resolve this — a genuine "I'm skeptical because..." or "this already
+feels different from Canvas because..." is exactly what this step is
+for. Give at least one concrete reason, pointing at something specific
+you noticed, not just a general impression. Include what surprised you
+(or didn't) about the cookie demo in Step 2.5, and whether it changes
+how you think about "convivial" as a claim — a tool that respects your
+privacy by design looks different next to a page that reads your
+device before you've clicked anything.
+
+**Step 4 — Post it in `class-commons`.**
+This is your first real Discussion post — not the throwaway "hello"
+from Day 1. Post your reaction as a new thread.
+
+**Step 5 — Read and reply to at least one classmate's post.**
+A genuine reply, not just "I agree" — reference something specific
+they said.
+
+## What "done" looks like
+
+- [ ] Read `README.md` and `SYLLABUS.md` §1
+- [ ] Browsed `docs/`, `labs/`, and `modules/`
+- [ ] Visited the Step 2.5 cookie demo
+- [ ] Posted a genuine first-reaction thread in `class-commons` (150–300 words)
+- [ ] Replied to at least one classmate's post
+
+There's no `LAB-SUBMISSION.md` for this module — completion is your
+`class-commons` post plus at least one reply, both visible in the
+Discussions tab. That's the entire deliverable.
+
+## Instructor notes
+
+- **Before assigning this module, personally visit the Step 2.5 link
+  and check your browser's Network tab (right-click → Inspect →
+  Network) to confirm nothing actually leaves your machine beyond
+  loading the page.** It's a small, independently-built site, not an
+  institutional tool — worth the same scrutiny you'd give anything
+  else students are sent to, especially in a privacy-focused course.
+  If you're not comfortable with what you find, drop Step 2.5 entirely
+  — the module works fine without it.
+- Checking completion is just checking `class-commons` activity for
+  the week — no separate submission to track.
+- Expect a range of first reactions, including skeptical or
+  unconvinced ones — that's the point, not a problem. A student who
+  writes "this just feels like GitHub, I don't see the philosophy
+  yet" has done the assignment correctly. Encourage them to hold that
+  reaction loosely and revisit it after Module 1.
+- Good Week 2 callback: once Illich's framework is on the table, ask
+  students to look back at their own Module 0 post and say whether
+  their instinct holds up now that they have the vocabulary for it.

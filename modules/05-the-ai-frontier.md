@@ -14,32 +14,50 @@
 To properly evaluate connectionist architectures and Large Language Models, we must recognize that the philosophical battle over automated cognition is over sixty years old. We ground our contemporary AI critique in Hubert Dreyfus's foundational 1965 text, *Alchemy and Artificial Intelligence*, and Ivan Illich's critique of technical over-specialization.
 
 ### ⚗️ A. The Alchemy Analogy
-Dreyfus observed that early AI pioneers achieved quick, striking successes in narrow domains, leading them to announce that human-level artificial intelligence was just around the corner. Dreyfus warned that this pattern was identical to ancient alchemy: alchemists successfully managed to distill quicksilver from dirt, but their progress hit a hard, structural wall because they misread the underlying chemistry of the material. Dreyfus famously asserted: *"An individual step in the right direction does not guarantee that further steps will bring one closer to one's goal."*
+Dreyfus observed that early AI pioneers achieved quick, striking successes in narrow domains, leading them to announce that human-level artificial intelligence was just around the corner. Dreyfus warned that this pattern was identical to ancient alchemy: alchemists successfully managed to distill quicksilver from dirt, but their progress hit a hard, structural wall because they misread the underlying chemistry of the material. His core warning: early momentum in a direction is no proof at all that continuing the same path leads anywhere near the actual goal.
 
 ### 🧱 B. The Three Excluded Human Elements
 Dreyfus argued that digital computers process information sequentially and discursively. In doing so, formal computer code systematically excludes three core human cognitive capacities that cannot be reduced to explicit rules:
-1. **Ambiguity Tolerance:** The capacity to operate fluidly within vague, shifting, and open-ended human contexts without crashing or requiring infinite data parameters.
-2. **Essence/Accident Discrimination:** The intuitive ability to distinguish between what is essential to a given situation and what is merely an accidental, irrelevant detail.
-3. **Fringe Consciousness:** The background awareness of our physical bodies, histories, and environments that informs every human choice.
+
+| Element | What it means |
+|---|---|
+| **Ambiguity Tolerance** | Operating fluidly within vague, shifting, open-ended human contexts without crashing or requiring infinite data parameters |
+| **Essence/Accident Discrimination** | The intuitive ability to distinguish what's essential to a situation from what's merely incidental |
+| **Fringe Consciousness** | The background awareness of our physical bodies, histories, and environments that informs every human choice |
 
 ### 🗺️ Illich's Technical Inversion Trap
 
-* **The Scaling Vector**
-    * **Action:** Continually scaling up massive connectionist training sets and token parameter allocations.
-    * **Immediate Output:** Drastically increases statistical "Ratio" computational efficiency and optimization.
-* **The Threshold of Inversion**
-    * **The Shift:** The tool passes a critical limit of intensity and detaches from localized human utility.
-    * **Systemic Result:** Mutates into an opaque system of administrative management that erases individual choice, suppresses *intellectus* (intuitive human conscience), and enforces a corporate monopoly over human thought.
+> ⚙️ **Ratio** — discursive, rule-based, mathematical optimization. What a computer does natively.
+
+> 🕯️ **Intellectus** — intuitive, embodied human conscience. What Dreyfus's three excluded elements point toward, and what no amount of scaling produces.
+
+```mermaid
+graph TD
+    A["Scale up massive connectionist<br/>training sets & parameters"] --> B["Ratio efficiency<br/>increases drastically"]
+    B --> C{"Tool crosses a critical<br/>threshold of intensity"}
+    C --> D["⚠️ Political Inversion<br/>Tool switches from serving<br/>humans to managing them"]
+    D --> E["Suppresses intellectus,<br/>enforces a corporate<br/>monopoly over human thought"]
+```
 
 ### 🕸️ C. The Link to 2026 Frameworks & Political Inversion
 
 This alchemical limit maps directly to Ivan Illich's concept of **Political Inversion**. Illich warns that when tools grow past a certain intensity, they switch from serving mankind to enslaving mankind, creating an administrative techno-bureaucracy that erases human agency. Large language models and predictive transformers represent the ultimate tool inversion: tools built on collected human language that are now deployed to manage, replace, and automate human *intellectus* entirely.
 
-Leo XIV warns that this corporate implementation creates the **"Babel Syndrome"** (§12)—the systemic illusion that individual conscience can be flattened into connectionist probability profiles. Furthermore, the encyclical updates traditional property ethics by declaring the **Universal Destination of Data** (§66): algorithms, training sets, and infrastructure networks are common heritage assets that cannot be treated as absolute corporate property by a tiny cluster of tech elites.
+> 🗼 **"Babel Syndrome"** (Leo XIV, §12) — the systemic illusion that individual conscience can be flattened into connectionist probability profiles.
+
+> 🌐 **Universal Destination of Data** (Leo XIV, §66) — algorithms, training sets, and infrastructure networks are common heritage assets, not absolute corporate property.
 
 This corporate enclosure hides a massive material cost. While tech conglomerates market AI as an abstract, environmentally clean cloud layer, **AlgorithmWatch's 2026 investigative data** exposes the material reality: a massive surge in carbon emissions and hidden local water consumption, combined with systematic corporate lobbying to keep data center utility metrics hidden from public NGO scrutiny.
 
+---
+
 ## 🛠️ Weekly Lab Evaluation Options
+
+| | 💻 Developer Format | 🔍 Analyst Format |
+|---|---|---|
+| **What you do** | Build a carbon-cost estimator script | Run the alchemy simulation across all three nodes |
+| **Best for** | Students who want to quantify environmental cost | Students who want to test where "Ratio" breaks down |
+| **Deliverable** | Script + execution config | `LAB-SUBMISSION.md` |
 
 ### 💻 The Developer Format: The Material Carbon Estimator
 
