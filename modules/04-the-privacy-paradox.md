@@ -67,11 +67,33 @@ kind of community than a modern institution can realistically offer.
 | **Best for** | Students who want to observe the mechanism directly | Students who want to apply the framework to their own digital life |
 | **Deliverable** | `LAB-SUBMISSION.md` with cycle data from both runs | Media bias report |
 
+### 🧪 About the Lab Simulation: Emergent Surveillance
+
+*The Developer Format uses this simulation directly.*
+
+**What this is.** A small city grid with two delivery bots (🤖) and two people (🚶) walking their own routes. The bots are only trying to deliver packages efficiently. Nobody told them to watch anyone. You'll see what happens anyway.
+
+**How to run it.**
+1. Open `labs/04-surveillance-simulation.html`. The grid, the legend, and a log are on the screen. The small number in a corner of a cell counts how many times a bot has passed through it. Cells tinted red are the ones the legend calls "surveillance grid cells."
+2. With **Maximize Space Efficiency** selected (it is by default), click **Initialize System** and let it run until the red alert appears. That usually takes one to two minutes. Watch the metrics, the grid, and the log.
+3. Click **Halt System**. Write down the number of deliveries and the surveillance footprint.
+4. Click **Reset States** before you switch modes. If you don't, the marks from your first run stay on the board. The log keeps everything from both runs, and the cycle counter starts over at 0, so note where Run 2 begins.
+5. Select **Local Time-Biased Mode**, click **Initialize System**, and run it for the same amount of time. Write down the same two numbers.
+6. **Step Network** moves things forward one step at a time if you want to watch closely.
+
+**Questions to think about.**
+- Nobody built these bots to track people. Where did the tracking come from? What exactly is being recorded, and by what?
+- Compare your two runs. What did each mode cost, and what did each mode leave behind?
+- Look at the log. Who is it written for? Who gets to read it?
+- Harold Innis writes about tools that favor space (reach, speed, control from a distance) over time (memory, place, community). Which mode is which? Illich talks about learning webs being enclosed. What got enclosed here?
+
+*Time: about 15 minutes.*
+
 ### 💻 The Developer Format: The Emergent Surveillance Forensic Audit
 
 1. Open `labs/04-surveillance-simulation.html` inside your local browser workspace.
-2. **Experiment Run 1 (Space-Biased Mode):** Click "Maximize Space Efficiency (High Velocity)." Then click "Initialize System" and let it run for roughly 45 seconds (about 300 cycles at the simulation's default speed) — or click "Step Network" 300 times manually if you'd rather watch each step. Note how quickly the system logs data weights along the center transit lines.
-3. **Experiment Run 2 (Time-Biased Mode):** Click "Reset States." Click "Local Time-Biased Mode" and repeat another ~300 cycles. Note what happens to the tracking weights when global spatial path metrics are ignored.
+2. **Experiment Run 1 (Space-Biased Mode):** Click "Maximize Space Efficiency (High Velocity)." Then click "Initialize System" and let it run until the red "enclosure detected" alert appears. That usually takes one to two minutes (roughly 400 to 800 cycles at the simulation's default speed) and occasionally a little longer, so be patient. You can click "Step Network" instead if you'd rather watch each step, but expect several hundred clicks. Note how quickly the system logs data weights along the center transit lines.
+3. **Experiment Run 2 (Time-Biased Mode):** Click "Reset States." Click "Local Time-Biased Mode" and run for the same number of cycles that Run 1 took to trigger its alert. Note what happens to the tracking weights when global spatial path metrics are ignored.
 4. **The Deliverable:** Commit a localized markdown log file (`LAB-SUBMISSION.md`) to your repository. Document the precise cycle number where the "Emergent Surveillance Matrix Alert" triggers during Run 1. Copy the syslog outputs and analyze — using the **Nguyen et al. (AIES) findings** and **Ivan Illich's network criteria** — how centralized tracking independently emerges from high-velocity data sorting, even when no explicit instructions tell the code to spy on users.
 
 ### 🔍 The Analyst Format: The Imperial Cloud vs. Learning Web Audit

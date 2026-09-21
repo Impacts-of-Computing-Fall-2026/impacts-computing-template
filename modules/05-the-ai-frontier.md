@@ -79,6 +79,25 @@ just inheriting one side.
 | **Best for** | Students who want to quantify environmental cost | Students who want to test where "Ratio" breaks down |
 | **Deliverable** | Script + execution config | `LAB-SUBMISSION.md` |
 
+### 🧪 About the Lab Simulation: The Dreyfus Alchemy Matrix
+
+*The Analyst Format uses this simulation directly.*
+
+**What this is.** A short scenario. An automated system has to decide on a student's request for an urgent extension because of a family emergency that isn't documented. You'll push the system three different ways and read what it does with each one.
+
+**How to run it.**
+1. Open `labs/05-alchemy-simulation.html` and read the scenario in the black box.
+2. Click **Node A**, **Node B**, and **Node C** in turn. Read the whole output each time, including the Critical Analysis Note at the bottom. On a phone you may need to scroll down to reach it.
+3. Click **Reset Processing Array** to go back to the start, then try the nodes in a different order. Does the order change what you notice?
+
+**Questions to think about.**
+- Where do you agree with the Critical Analysis Notes, and where do you not? Pick one sentence you'd argue with.
+- The system in this lab follows explicit rules. The AI tools you use every day don't work quite that way. Does Dreyfus's argument still apply to them? Why or why not?
+- If you had to decide about this extension, what would you want to know that the system can't ask?
+- Who should make a decision like this: a rule, a model, or a person? What would Illich say about what gets lost when the answer is "the system"?
+
+*Time: about 10 to 15 minutes.*
+
 ### 💻 The Developer Format: The Material Carbon Estimator
 
 1. Write a local automation script (`carbon_estimator.py`) that acts as an infrastructure carbon calculator. Your script must read a local text file processing load, estimate processing durations across different server topologies, and compute the estimated grid carbon output based on the active utility emission profiles exposed in the June 2026 AlgorithmWatch report.

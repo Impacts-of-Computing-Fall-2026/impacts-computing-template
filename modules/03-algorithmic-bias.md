@@ -30,7 +30,7 @@ This manifests clearly in the ACM/AIES discovery of **"Just Noticeable" Bias** (
 
 ```mermaid
 graph TD
-    A["1,000 applicants,<br/>roughly even split by group"] --> B["Tiny -1.6 point penalty<br/>applied to one group only"]
+    A["100,000 applicants,<br/>roughly even split by group"] --> B["Tiny -1.6 point penalty<br/>applied to one group only"]
     B --> C["Sorted and ranked"]
     C --> D["Macro compliance check<br/>(80% threshold rule)"]
     D -->|"✅ PASSES<br/>(deviation too small to trip it)"| E["Legally 'fine'"]
@@ -66,13 +66,35 @@ uses." That's a much harder problem than catching a one-off bad actor.
 | **Best for** | Students who want to construct the mechanism | Students who want to audit an existing one |
 | **Deliverable** | Script + distribution graph | `LAB-SUBMISSION.md` with both test runs recorded |
 
+### 🧪 About the Lab Simulation: Just Noticeable Ranking Audit
+
+*The Analyst Format uses this simulation directly. If you choose the Developer Format, you're building your own version of it, so try this one first and compare.*
+
+**What this is.** A hiring system ranks 100,000 applicants from two groups, Alpha and Beta, and picks the top 20%. You are the auditor. Your job is to check whether the system is fair, using the same kind of test many real audits use.
+
+**How to run it.**
+1. Open `labs/03-bias-simulation.html`.
+2. Click **Run Standard Baseline Array**. Look at the numbers on the left (selection rates, the Disparate Impact Ratio, the audit status) and the top 15 ranked applicants on the right.
+3. Click it a few more times. Notice what changes from run to run and what doesn't.
+4. Now click **Deploy Opaque Optimization Model**. On the screen, the model is a black box. You only see what comes out. Run it a few times too.
+
+**What to look for.** The audit passes a system as long as Group Beta's selection rate is at least 80% of Group Alpha's. Keep that rule in mind. Then count how many Group Beta applicants show up in the top ten rows each time you run each version.
+
+**Questions to think about.**
+- Did the audit catch anything? Where did the difference between the two versions show up, and where didn't it?
+- Who would notice this if they only saw the audit status? Who would notice if they saw the top of the list?
+- Cathy O'Neil says these models are opaque. What did that mean for you, sitting in the auditor's chair?
+- Illich talks about a threshold past which a tool starts working against its purpose. Is a harm this small still a harm? Where would you draw the line, and who should get to draw it?
+
+*Time: about 10 minutes.*
+
 ### 💻 The Developer Format: The Just-Noticeable Ranking Audit
-1. Write a script to simulate an institutional recruitment portal that ranks 1,000 applicants based on a synthetic performance score variable.
+1. Write a script to simulate an institutional recruitment portal that ranks 100,000 applicants based on a synthetic performance score variable. (Use a large pool. With only a thousand, chance alone can flip the audit result from one run to the next.)
 2. Introduce a hidden "Just Noticeable" loop: inject a minor 1.6-point performance-score penalty that targets candidates passing a non-protected proxy data point (e.g., graduated from a specific array of zip codes). This mirrors the penalty built into `labs/03-bias-simulation.html`, so your results should be directly comparable to the Analyst Format's.
 3. **Deliverable:** Commit your script. Generate an output distribution graph showing how a standard, macro-level compliance audit completely misses this small deviation, while your timeline analysis proves the targeted demographic is entirely stripped of top-10 ranking positions by the end of the pipeline.
 
 ### 🔍 The Analyst Format: The Second Watershed Forensic Audit
 1. Open `labs/03-bias-simulation.html` in your browser.
 2. **Test Run 1:** Click the "Run Standard Baseline Array" button. Record the Disparate Impact Ratio and the output demographic distribution in the top 15 ranks.
-3. **Test Run 2:** Click the "Deploy Opaque Optimization Model" button. Record the new Disparate Impact Ratio. Observe the Audit Compliance status box. Note the change in how many purple Group Beta candidates manage to retain placement flags inside the top 10 positions.
+3. **Test Run 2:** Click the "Deploy Opaque Optimization Model" button. Record the new Disparate Impact Ratio. Observe the Audit Compliance status box. Note the change in how many Group Beta candidates (each row shows its group) manage to hold a place inside the top 10 positions.
 4. **Deliverable:** Commit an audit analysis report (`LAB-SUBMISSION.md`) to your repository. Using **Alkhathlan et al. (AIES)** and **Ivan Illich's Second Watershed criteria**, explain how the hidden 1.6-point reduction passes legal regulatory checklist formulas perfectly while completely executing structural exclusion at the pipeline's peak. Detail how this software has mutated from an empowering utility into an oppressive institutional monopoly.
