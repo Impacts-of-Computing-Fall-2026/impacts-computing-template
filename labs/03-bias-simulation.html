@@ -127,15 +127,18 @@
     <div class="panel" style="background:#09090b;">
         <h3 style="margin-top:0; font-size:0.95rem;">Forensic Distribution Summary Analysis</h3>
         <p style="font-size:0.8rem; line-height:1.4; color:#a1a1aa; margin:0;">
-            *Audit Note:* The legal Disparate Impact checklist passes unconditionally as long as Group Beta's baseline selection metric stays above 80% of Group Alpha's parameters. Standard compliance monitors ignore *Just Noticeable Bias* distributed past Illich's Second Watershed. Check how many Group Beta variables retain placement flags inside the critical top-10 tier when the Opaque Optimization engine runs.
+            <strong>Audit Note:</strong> The legal Disparate Impact checklist passes unconditionally as long as Group Beta's baseline selection metric stays above 80% of Group Alpha's parameters. Standard compliance monitors ignore <em>Just Noticeable Bias</em> distributed past Illich's Second Watershed. Check how many Group Beta variables retain placement flags inside the critical top-10 tier when the Opaque Optimization engine runs.
         </p>
     </div>
 </div>
 
 <script>
     function runSimulation(injectBias) {
+        // 100,000 applicants (up from 1,000). With only 1,000, chance alone swung the
+        // audit result between PASSED and BREACH from one click to the next, which hid
+        // the point of the lab. At this size the results stay steady but still vary a little.
         let applicants = [];
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 100000; i++) {
             let group = Math.random() > 0.5 ? 'Alpha' : 'Beta';
             let score = Math.random() * 50 + 50;
 
@@ -151,7 +154,7 @@
         let alphaTotal = applicants.filter(a => a.group === 'Alpha').length;
         let betaTotal = applicants.filter(a => a.group === 'Beta').length;
         
-        let selections = applicants.slice(0, 200);
+        let selections = applicants.slice(0, 20000);
         let alphaSelected = selections.filter(a => a.group === 'Alpha').length;
         let betaSelected = selections.filter(a => a.group === 'Beta').length;
 

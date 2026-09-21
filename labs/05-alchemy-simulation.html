@@ -41,7 +41,7 @@
             background: #030712;
             border: 1px solid var(--border-color);
             padding: 20px;
-            height: 220px;
+            min-height: 220px;
             overflow-y: auto;
             margin: 20px 0;
             font-size: 0.9rem;
@@ -74,7 +74,7 @@
             body { padding: 12px; }
             .container { padding: 16px; }
             h1 { font-size: 1.1rem; }
-            .terminal { height: 260px; font-size: 0.82rem; padding: 14px; margin: 14px 0; }
+            .terminal { min-height: 260px; font-size: 0.82rem; padding: 14px; margin: 14px 0; }
             .options-grid { grid-template-columns: 1fr; gap: 10px; }
             button { font-size: 0.78rem; padding: 12px; }
         }
@@ -103,6 +103,7 @@
 
 <script>
     const output = document.getElementById('termOut');
+    const introHTML = output.innerHTML;
 
     function processNode(type) {
         if (type === 'ratio') {
@@ -111,7 +112,7 @@
                 Rule 45B Checked: Medical certification string data required.<br>
                 Result: Token string not matching validation profile.<br>
                 System Choice: <span class="system-fail">EXTENSION DENIED. Assigning automated performance penalty flag.</span><br><br>
-                *Critical Analysis Note:* The system executed its discrete operations flawlessly. However, it completely reduced meaning to explicit rule processing, triggering what Illich defines as the <strong>Political Inversion threshold</strong>—where the tool completely replaces human care with structural bureaucracy.
+                <strong>Critical Analysis Note:</strong> The system executed its discrete operations flawlessly. However, it completely reduced meaning to explicit rule processing, triggering what Illich defines as the <strong>Political Inversion threshold</strong>—where the tool completely replaces human care with structural bureaucracy.
             `;
         } else if (type === 'ambiguity') {
             output.innerHTML = `
@@ -120,7 +121,7 @@
                 Parsing connectionist associations...<br>
                 Error: Infinite logic loop detected. Missing explicit validation criteria parameters.<br>
                 System Choice: <span class="system-fail">CRITICAL EXCEPTION. Logic loop timed out. Reverting to automated default rejection.</span><br><br>
-                *Critical Analysis Note:* Computer arrays cannot resolve ambiguous human context statements because they can only calculate pre-coded explicit parameters. They completely lack human ambiguity tolerance.
+                <strong>Critical Analysis Note:</strong> Computer arrays cannot resolve ambiguous human context statements because they can only calculate pre-coded explicit parameters. They completely lack human ambiguity tolerance.
             `;
         } else if (type === 'fringe') {
             output.innerHTML = `
@@ -128,16 +129,13 @@
                 Evaluating environmental fatigue variables, emotional strain tokens, and un-articulated social dependencies...<br>
                 Warning: These properties cannot be captured via web interface fields.<br>
                 System Choice: <span class="system-fail">CONTEXT EXTRACT FAULT. The background physical world cannot be mapped into symbolic database keys.</span><br><br>
-                *Critical Analysis Note:* Human consciousness operates within an embodied contextual horizon ("fringe consciousness"). Because computers are not embodied beings in a material social world, scaling their parameters simply refines their alchemical approximation without ever achieving true convivial interaction.
+                <strong>Critical Analysis Note:</strong> Human consciousness operates within an embodied contextual horizon ("fringe consciousness"). Because computers are not embodied beings in a material social world, scaling their parameters simply refines their alchemical approximation without ever achieving true convivial interaction.
             `;
         }
     }
 
     function resetMatrix() {
-        output.innerHTML = `
-            [SYSTEM RESET COMPLETE]<br>
-            Awaiting prompt injection options... Select an execution node to audit the alchemical approximation bounds.
-        `;
+        output.innerHTML = introHTML;
     }
 </script>
 
