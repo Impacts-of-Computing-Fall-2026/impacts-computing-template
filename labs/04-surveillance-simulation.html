@@ -317,6 +317,8 @@
         });
 
         bots.forEach((b, idx) => {
+            // Local mode is genuinely low velocity: bots move on only about half of the steps
+            if (optimizationMode === 'local' && Math.random() < 0.5) return;
             let targetR = b.hasPkg ? (idx === 0 ? 14 : 0) : b.pkgR;
             let targetC = b.hasPkg ? 7 : b.pkgC;
 
