@@ -94,7 +94,7 @@ By stripping our course environment down to raw Markdown files and terminal Git 
 ### 💻 The Developer Format: The Local Markdown Boilerplate
 
 1. Initialize your local Git workspace repository. Author a clean, optimized shell script that automatically parses plain-text data fields to generate a formatted HTML file entirely free of external JavaScript dependencies or styles.
-2. **Deliverable:** Commit your script and an initialized repository state to your repo. Prove that your output file size remains under 5 Kilobytes (KB) while rendering flawlessly inside a terminal-based web browser environment.
+2. **Deliverable:** Commit your script and an initialized repository state to your repo. Prove that your output file size remains under 5 Kilobytes (KB) while rendering flawlessly inside a terminal-based web browser environment. Along with your script, include a short written reflection (a few paragraphs, as a comment block or a brief companion `LAB-SUBMISSION.md`) explaining how your specific design choices — no JavaScript, no external dependencies, minimal file size — embody Illich's distinction between convivial and manipulative tools. What would a heavier version of this script look like, and why did you avoid building it that way?
 
 ### 🔍 The Analyst Format: The Convivial Workspace Audit
 

@@ -63,35 +63,9 @@ person or one decision to hold responsible.
 | **Best for** | Students who want to build the mechanism themselves | Students who want to diagnose an existing one |
 | **Deliverable** | Script + output log | `LAB-SUBMISSION.md` with syslog evidence |
 
-### 🧪 About the Lab Simulation: The Nudge Engine
-
-*The Analyst Format uses this simulation directly. If you're doing the Developer Format, it's worth a few minutes as a reference for the behavior you're building.*
-
-**What this is.** A plain text box with a tracking system running behind it. The system watches how long you go without typing, and it has ideas about what to do about that. You'll be on the receiving end of a nudge, and you'll get to read what the system says about you while it happens.
-
-**How to run it.**
-1. Open `labs/02-nudge-simulation.html`. You'll see three counters at the top, a text box, a button, and a log at the bottom.
-2. Click into the text box and type a few sentences, anything you like. A line about what you had for breakfast works fine.
-3. Click **Initialize Usage Tracking**, then click back into the text box.
-4. Type for a bit, then stop and wait. Don't touch anything. See what happens, and how long it takes.
-5. Start typing again. See what happens to the alert. Then stop again, and do this a few times.
-6. Watch the three counters and the log as you go. Click **Halt Usage Tracking** when you're done. Don't refresh the page until you've copied what you need from the log, because a refresh clears it.
-
-**What to look for.** The timing. Do the alerts come at the same interval every time? Then look at the log. Read what it says about what just happened, and how it describes it.
-
-**Questions to think about.**
-- How did it feel? Did you type differently once you knew it was watching? Did you type anything just to make it stop?
-- B.J. Fogg says a behavior needs motivation, ability, and a prompt. Which of those is this system working on? Which is it ignoring?
-- Who decided that a pause counts as a problem? Was anyone checking whether you were stuck, thinking, or just looking out the window?
-- The log records what the system did. It doesn't record what you typed. Is that reassuring? Does it matter?
-- Is this persuasion or manipulation? Where does the line fall for you, and what would move it?
-- Illich would ask what a convivial version of this workspace looks like. Describe one.
-
-*Time: about 10 minutes.*
-
 ### 💻 The Developer Format: The Behavioral Trigger Script
 1. Write a script that simulates a standard platform feedback loop. Build a notification engine that tracks user inactivity (in seconds) and dynamically fires automated alerts using varying intervals based on Fogg's behavior variables ($B=MAP$).
-2. **Deliverable:** Commit your script and an output log showing how your trigger intervals vary to optimize user engagement and minimize platform drop-off.
+2. **Deliverable:** Commit your script and an output log showing how your trigger intervals vary to optimize user engagement and minimize platform drop-off. Along with your script, include a short written reflection (a comment block or a brief companion `LAB-SUBMISSION.md`) explaining how the behavioral triggers you built relate to Fogg's model, Watters' critique of Skinnerian EdTech design, and Illich's Radical Monopoly. Would a student experiencing your notification engine have a real way to opt out?
 
 ### 🔍 The Analyst Format: The Manipulative Interface Audit
 1. Launch the file `labs/02-nudge-simulation.html` inside your local browser. Click "Initialize Usage Tracking" and interact with the input box.
