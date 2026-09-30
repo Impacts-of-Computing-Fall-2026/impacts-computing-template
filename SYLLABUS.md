@@ -131,7 +131,7 @@ All foundational open-source textbooks are freely accessible online:
 * **The Focus:** Behavioral design loops, persuasive technology, and the corporate acceleration of labor.
 * **Core Texts:**
     * B.J. Fogg, *Persuasive Technology: Using Computers to Change What We Think and Do* (Chapters 1–3) — [Borrow via Internet Archive](https://archive.org/details/persuasivetechno0000fogg)
-    * Audrey Watters, *Teaching Machines: The History of Personalized Learning* (Chapter 8: "The Skinnerian Panopticon") — **provided as a digital copy on Brightspace**; no open-access version exists elsewhere (see note in §5 above)
+    * Audrey Watters, *Teaching Machines: The History of Personalized Learning* (Chapter 11: "Programmed Instruction and the Practice of Freedom") — **provided as a digital copy on Brightspace**; no open-access version exists elsewhere (see note in §5 above)
     * Cory Doctorow, *"Enshittification"* Selected Essays — [Read the founding essay on Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#compulsory-enshittification)
     * *Antiqua et nova* (Section 67: "The Crisis of Rapidification") — [Official English text](https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html)
 * **Lab Operations (Ethical Analysis 1):** Run `labs/02-nudge-simulation.html`. Evaluate UI stimulus triggers against Watters' behaviorist tracking criteria and Illich's definitions of institutional, manipulative tools.
