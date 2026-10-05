@@ -90,7 +90,7 @@ exposing their work without meaningful consent.
 ## On the Codeberg migration — resolved
 
 This was an open question when this doc was first drafted; it's since
-been resolved. The Week 8 migration is an **optional, small-group pilot**,
+been resolved. The October 19–25 migration is an **optional, small-group pilot**,
 not a required whole-class event — see `docs/MAINTENANCE-NOTICE.md` for
 the finalized version students actually see. The private-repo model
 transfers directly for anyone who opts in: Codeberg supports the same

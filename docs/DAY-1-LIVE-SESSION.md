@@ -139,4 +139,4 @@ Individual troubleshooting — this is the actual point of having a live session
 
 - **No GPG key generation.** Not part of this course's infrastructure.
 - **No forking instructions.** Repos are created for students directly; there's nothing to fork.
-- **No Codeberg / migration talk.** That's an optional week-8 aside covered in `docs/MAINTENANCE-NOTICE.md` — raising it here just adds anxiety about something eleven weeks away, for an exercise most students won't opt into.
+- **No Codeberg / migration talk.** That's an optional late-October aside covered in `docs/MAINTENANCE-NOTICE.md` — raising it here just adds anxiety about something eight weeks away, for an exercise most students won't opt into.
