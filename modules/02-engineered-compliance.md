@@ -65,7 +65,7 @@ person or one decision to hold responsible.
 
 ### 💻 The Developer Format: The Behavioral Trigger Script
 1. Write a script that simulates a standard platform feedback loop. Build a notification engine that tracks user inactivity (in seconds) and dynamically fires automated alerts using varying intervals based on Fogg's behavior variables ($B=MAP$).
-2. **Deliverable:** Commit your script and an output log showing how your trigger intervals vary to optimize user engagement and minimize platform drop-off. Along with your script, include a short written reflection (a comment block or a brief companion `LAB-SUBMISSION.md`) explaining how the behavioral triggers you built relate to Fogg's model, Watters' critique of Skinnerian EdTech design, and Illich's Radical Monopoly. Would a student experiencing your notification engine have a real way to opt out?
+2. **Deliverable:** Commit your script and an output log showing how your trigger intervals vary to optimize user engagement and minimize platform drop-off. Along with your script, include a short written reflection (a comment block or a brief companion `LAB-SUBMISSION.md`) explaining how the behavioral triggers you built relate to Fogg's model, Watters' critique of Skinnerian EdTech design, and Illich's Radical Monopoly. Would a student experiencing your notification engine have a real way to opt out? Save your script, log, and reflection together in a new folder named `modules/02-engineered-compliance/` before you commit and push.
 
 ### 🔍 The Analyst Format: The Manipulative Interface Audit
 1. Launch the file `labs/02-nudge-simulation.html` inside your local browser. Click "Initialize Usage Tracking" and interact with the input box.
@@ -77,4 +77,4 @@ person or one decision to hold responsible.
    | **The Telemetry Gaze** | How the background script monitors student usage data timing down to the tenth of a second (`0.1s`) |
    | **The Enforced Compliance** | How variable-ratio notification triggers deny a user the freedom to think or work outside the software's closed boundaries, per Section 67 of *Antiqua et nova* and Illich's *Radical Monopoly* |
 
-3. **Deliverable:** Commit your completed audit file (`LAB-SUBMISSION.md`) to your repository. Copy your background syslog stream into the entry to verify the automated trigger timestamps.
+3. **Deliverable:** Create a new folder named `modules/02-engineered-compliance/`. Copy [`LAB-SUBMISSION-TEMPLATE.md`](../LAB-SUBMISSION-TEMPLATE.md) into it, rename the copy `LAB-SUBMISSION.md`, and fill it in (the [Student Guide](../STUDENT-GUIDE.md) has the details). Copy your background syslog stream into the Raw Output section to verify the automated trigger timestamps. Then commit and push.
