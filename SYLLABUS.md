@@ -147,7 +147,7 @@ All foundational open-source textbooks are freely accessible online:
 * **Core Texts:**
     * Cathy O'Neil, *Weapons of Math Destruction* (Chapters 1–3) — [Borrow via Internet Archive](https://archive.org/details/weaponsofmathdes0000onei)
     * Ivan Illich, *Tools for Conviviality* — Chapter 1: "The Two Watersheds" — [Full text via Internet Archive](https://archive.org/details/toolsforconvivia0000illi) (also assigned in Module 1; reread it with automated systems in mind)
-    * AlgorithmWatch Index, *Managed by the Algorithm: How AI is Changing the Way We Work* — [Read on AlgorithmWatch](https://algorithmwatch.org/en/automated-decision-making-workplace/)
+    * AlgorithmWatch, *Data Practices and Surveillance in the World of Work* (2023) — [Read on AlgorithmWatch](https://algorithmwatch.org/en/study-data-practices-surveillance-work/)
     * Alkhathlan, Shrestha, Harrison & Rundensteiner, *"Exploring 'Just Noticeable' Group Fairness in Rankings"* (AIES 2025) — [Official proceedings link](https://ojs.aaai.org/index.php/AIES/article/view/36532)
 * **Lab Operations (Ethical Analysis 3):** Run `labs/03-bias-simulation.html`. Analyze how a hidden 1.6-point proxy data adjustment easily passes macro-level compliance checking. Frame your final analysis around Illich's *Second Watershed*—identifying the exact moment corporate web infrastructures transition from helpful tools into a mandatory, inescapable monopoly.
 

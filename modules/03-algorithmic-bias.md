@@ -3,14 +3,14 @@
 ## 📖 Core Readings This Week
 * **Cathy O'Neil**, *Weapons of Math Destruction* (Chapters 1–3) — [Borrow via Internet Archive](https://archive.org/details/weaponsofmathdes0000onei)
 * **Ivan Illich**, *Tools for Conviviality* (1973) — Chapter 1: "The Two Watersheds" — [Full text via Internet Archive](https://archive.org/details/toolsforconvivia0000illi)
-* **AlgorithmWatch**, *Managed by the Algorithm: How AI is Changing the Way We Work* (Workplace Automation Index) — [Read on AlgorithmWatch](https://algorithmwatch.org/en/automated-decision-making-workplace/)
+* **AlgorithmWatch**, *Data Practices and Surveillance in the World of Work* (2023) — [Read on AlgorithmWatch](https://algorithmwatch.org/en/study-data-practices-surveillance-work/)
 * **Alkhathlan, Shrestha, Harrison & Rundensteiner**, *"Exploring 'Just Noticeable' Group Fairness in Rankings"* (AIES 2025) — [Official proceedings link](https://ojs.aaai.org/index.php/AIES/article/view/36532)
 
 ---
 
 ## 🧠 1. Theoretical Context: The Second Watershed of Automated Management
 
-We expand Cathy O'Neil's structural analysis of automated models by exploring how algorithms systematically reshape modern labor. Independent investigations by **AlgorithmWatch** demonstrate that automated decision-making (ADM) systems are actively deployed to continuously log employee performance data, track physical movement telemetry, and generate automated retention scores that predict which workers to target for termination.
+We expand Cathy O'Neil's structural analysis of automated models by exploring how algorithms systematically reshape modern labor. AlgorithmWatch's research on workplace surveillance finds that digital monitoring and algorithmic management, once tied mainly to gig and platform work, are spreading into more traditional industries. Automated decision-making (ADM) systems are used to continuously log employee performance data and track workers' activity, often with little transparency about how that data is used.
 
 To fully conceptualize this threat, we apply Ivan Illich's historical law of **The Two Watersheds**:
 
