@@ -76,7 +76,7 @@ Your final grade will be computed across four clear operational vectors:
 | Assessment Vector           | Weight  | Operational Requirement                                      |
 | :-------------------------- | :------ | :----------------------------------------------------------- |
 | **Read / View / Annotate**  | **25%** | Deep engagement with text, videos, and documentation via local markdown summaries and mind maps. |
-| **Interact / Engage**       | **20%** | Substantive and meaningful discussion interactions in our shared `class-commons` GitHub Discussions space. |
+| **Interact / Engage**       | **20%** | Substantive, specific discussion in our shared `class-commons` GitHub Discussions space, including a required post and reply in Modules 4 and 5. |
 | **Ethical & Code Analyses** | **30%** | Comprehensive forensic submissions running tests against production software models and policies. |
 | **Final Capstone Audit**    | **25%** | An open-notes deep-dive forensic audit analyzing real-world systemic algorithmic scenarios. |
 
@@ -86,6 +86,14 @@ Every week, you will choose **one** of two submission formats for your lab work.
 
 * **The Developer Format:** Built for students pursuing hard algorithmic implementation and engineering diagnostics. Submissions require functional code execution scripts (`.py`, `.sh`, `.js`), dataset distribution verifications, and plain-text inline logic annotations.
 * **The Analyst Format:** Built for students pursuing structural policy deconstruction, UX interface forensics, and socio-technical policy critique. Submissions require deeply structured analytical reports (`LAB-SUBMISSION.md`) checking live systems against our philosophical frameworks.
+
+### Required Discussions
+
+Modules 4 and 5 each include one required discussion: a post responding to the module's prompt, and a reply to a classmate. Prompts and deadlines are in the module file and announced in `class-commons`. Post first, and reply after others have posted.
+
+These are assessed with the Discussion Post Rubric in `RUBRICS.md`, for the quality of your reasoning and your engagement with a classmate's actual point, not for how many posts you make. A short, specific post that applies a course idea to a real example is stronger than a long general one. Replies that only say "I agree" don't meet the requirement.
+
+Discussion is the place where you try ideas out before they show up in your lab or capstone work. If you are having trouble posting or submitting for any reason, tell me early.
 
 ### 🧪 The Laboratory Sandbox Operational Registry
 This repository contains four custom minimal-computing software simulators located in the `labs/` path directory. To complete your weekly lab submissions, you will run these localized interactive scripts to generate your own empirical raw tracking logs:
@@ -147,9 +155,10 @@ All foundational open-source textbooks are freely accessible online:
 * **Core Texts:**
     * Cathy O'Neil, *Weapons of Math Destruction* (Chapters 1–3) — [Borrow via Internet Archive](https://archive.org/details/weaponsofmathdes0000onei)
     * Ivan Illich, *Tools for Conviviality* — Chapter 1: "The Two Watersheds" — [Full text via Internet Archive](https://archive.org/details/toolsforconvivia0000illi) (also assigned in Module 1; reread it with automated systems in mind)
-    * AlgorithmWatch, *Data Practices and Surveillance in the World of Work* (2023) — [Read on AlgorithmWatch](https://algorithmwatch.org/en/study-data-practices-surveillance-work/)
+    * Cracked Labs, *Surveillance and Digital Control at Work* (2022–2024) — choose one report from the [project page](https://crackedlabs.org/en/data-work); the Module 3 file lists the options
     * Alkhathlan, Shrestha, Harrison & Rundensteiner, *"Exploring 'Just Noticeable' Group Fairness in Rankings"* (AIES 2025) — [Official proceedings link](https://ojs.aaai.org/index.php/AIES/article/view/36532)
-* **Lab Operations (Ethical Analysis 3):** Run `labs/03-bias-simulation.html`. Analyze how a hidden 1.6-point proxy data adjustment easily passes macro-level compliance checking. Frame your final analysis around Illich's *Second Watershed*—identifying the exact moment corporate web infrastructures transition from helpful tools into a mandatory, inescapable monopoly.
+* **Lab Operations (Ethical Analysis 3):** Run `labs/03-bias-simulation.html`. Analyze how a hidden 1.6-point proxy data adjustment easily passes macro-level compliance checking. Frame your final analysis around Illich's *Second Watershed*—identifying the exact moment corporate web infrastructures transition from helpful tools into a mandatory, inescapable monopoly. Also name the Cracked Labs report you chose to read, say what you read in it, and explain how it connects to this module's work. In your real-world stakes analysis, name a specific real system and say who bears the cost.
+* **Optional discussion:** "Who decided?" Name an automated decision that has affected you or someone you know, and post in `class-commons`. Replies are welcome.
 
 ```text
    🌱 [OPTIONAL MIGRATION PILOT, OCT 19–25: A CONVIVIAL MIGRATION EXERCISE]
@@ -166,7 +175,8 @@ All foundational open-source textbooks are freely accessible online:
     * Harold Innis, *Empire and Communications* (Chapter 1: "The Bias of Communication") — [Borrow via Internet Archive](https://archive.org/details/biasofcommunicat0000inni)
     * Ivan Illich, *Deschooling Society* — Chapter 6: "Learning Webs" — [Full text via Internet Archive](https://archive.org/details/DeschoolingSociety)
     * Nguyen, Stoykova & Arazo, *"Emergent AI Surveillance: Overlearned Person Re-Identification and Its Mitigation in Law Enforcement Context"* (AIES 2025) — [Official proceedings link](https://ojs.aaai.org/index.php/AIES/article/view/36680)
-* **Lab Operations:** Run `labs/04-surveillance-simulation.html`. Document the exact runtime metrics where tracking features emerge from non-human route arrays.
+* **Lab Operations:** Run `labs/04-surveillance-simulation.html`. Document the exact runtime metrics where tracking features emerge from non-human route arrays. In your real-world stakes analysis, name a specific real system and say who bears the cost.
+* **Required discussion:** "Where do you get watched?" Post by Thu Nov 5; reply to a classmate by Tue Nov 10. See the Module 4 file.
 
 ### 🤖 Part III: The AI Frontier and the Human Person
 
@@ -179,7 +189,8 @@ All foundational open-source textbooks are freely accessible online:
     * Emily M. Bender, Timnit Gebru, et al., *"On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"* (ACM FAccT 2021) — [Author's free copy](https://faculty.washington.edu/ebender/papers/Stochastic_Parrots.pdf)
     * AlgorithmWatch Report, *The AI Climate Hoax: Behind the Curtain of How Big Tech Greenwashes Impacts* (2026) — [Read the report](https://algorithmwatch.org/en/ai-climate-hoax/)
     * 📺 *Media Screening:* [Pope Leo XIV's AI Encyclical Explained (w/ Fr. Gregory Pine)](https://www.youtube.com/watch?v=cpptgvohfZc)
-* **Lab Operations:** Run `labs/05-alchemy-simulation.html`. Test Dreyfus's cognitive boundaries (*ambiguity tolerance, fringe consciousness*) against systemic data limitations.
+* **Lab Operations:** Run `labs/05-alchemy-simulation.html`. Test Dreyfus's cognitive boundaries (*ambiguity tolerance, fringe consciousness*) against systemic data limitations. In your real-world stakes analysis, name a specific real system and say who bears the cost.
+* **Required discussion:** "What does the machine miss?" Post by Sun Nov 22 (before the Thanksgiving recess); reply to a classmate by Tue Dec 1. See the Module 5 file.
 
 #### Capstone — Dec 8 – Dec 18: Independent Capstone Inquiries & Main-Branch Merge
 * **The Focus:** Final Exam preparation and production repository commits.

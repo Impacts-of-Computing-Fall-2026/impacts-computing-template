@@ -71,6 +71,26 @@ just inheriting one side.
 
 ---
 
+## 💬 Required Discussion: What Does the Machine Miss?
+
+**Post due Sunday, Nov 22. Replies due Tuesday, Dec 1.** Post in `class-commons`. The Thanksgiving recess falls in between, so post before the break.
+
+Dreyfus names three things he thought formal systems couldn't capture: ambiguity tolerance, telling the essential from the accidental, and fringe consciousness.
+
+Think of a task you have seen an AI system do or be used for: a chatbot, a recommendation feed, a screening or grading tool, a writing assistant. Then:
+
+1. Describe one specific moment, yours or something you read about, where the system did the task well or badly.
+2. Which of Dreyfus's three, if any, helps explain what happened? If none does, say why.
+3. Does the miss matter in practice, or only in theory? Who bears the cost when it goes wrong?
+
+You're welcome to use *Magnifica Humanitas* or the stochastic parrots paper to push back on Dreyfus.
+
+**Your reply (required):** Disagree with a classmate respectfully. Find the strongest point in their post, then explain where you see it differently and why.
+
+Discussion is assessed with the Discussion Post Rubric in [`RUBRICS.md`](../RUBRICS.md), for the quality of your reasoning and your engagement with a classmate's actual point.
+
+---
+
 ## 🛠️ Weekly Lab Evaluation Options
 
 | | 💻 Developer Format | 🔍 Analyst Format |
@@ -82,10 +102,10 @@ just inheriting one side.
 ### 💻 The Developer Format: The Material Carbon Estimator
 
 1. Write a local automation script (`carbon_estimator.py`) that acts as an infrastructure carbon calculator. Your script must read a local text file processing load, estimate processing durations across different server topologies, and compute the estimated grid carbon output based on the active utility emission profiles exposed in the June 2026 AlgorithmWatch report.
-2. **Deliverable:** Commit your script and an execution configuration model. Contrast the environmental efficiency claims of central commercial cloud architectures against the carbon footprint of a localized, self-hosted campus server node. Along with your script, include a short written reflection (a comment block or a brief companion `LAB-SUBMISSION.md`) connecting your results to Illich's Political Inversion and to the material costs described in the AlgorithmWatch report. What does the "efficiency" of a large commercial cloud leave out of its own accounting? Save your script, configuration, and reflection together in a new folder named `modules/05-the-ai-frontier/` before you commit and push.
+2. **Deliverable:** Commit your script and an execution configuration model. Contrast the environmental efficiency claims of central commercial cloud architectures against the carbon footprint of a localized, self-hosted campus server node. Along with your script, include a short written reflection (a comment block or a brief companion `LAB-SUBMISSION.md`) connecting your results to Illich's Political Inversion and to the material costs described in the AlgorithmWatch report. What does the "efficiency" of a large commercial cloud leave out of its own accounting? Also name a real tool whose environmental or material cost your estimator speaks to, say who pays that cost, and explain what your results can and can't tell us about it. Save your script, configuration, and reflection together in a new folder named `modules/05-the-ai-frontier/` before you commit and push.
 
 ### 🔍 The Analyst Format: The Alchemy Limit Assessment
 
 1. Open `labs/05-alchemy-simulation.html` in your workspace browser.
 2. Run your audit sequence through **Node A (Ratio Model)**, **Node B (Ambiguity Matrix)**, and **Node C (Fringe Context Matrix)**, in any order — each is independent and doesn't build on the previous selection. Observe the automated engine output responses and exceptions for each.
-3. **Deliverable:** Create a new folder named `modules/05-the-ai-frontier/`. Copy [`LAB-SUBMISSION-TEMPLATE.md`](../LAB-SUBMISSION-TEMPLATE.md) into it, rename the copy `LAB-SUBMISSION.md`, and commit and push your audit evaluation report there (the [Student Guide](../STUDENT-GUIDE.md) has the details). Using **Hubert Dreyfus's alchemical pillars** and **Ivan Illich's Political Inversion framework**, break down why the "Ratio" checklist fails to safely navigate human crises. Explain how the system crashes under nodes B and C, proving that scaling up statistical data parameters does not lead closer to human understanding (*intellectus*), but simply refines a manipulative, rule-bound simulation.
+3. **Deliverable:** Create a new folder named `modules/05-the-ai-frontier/`. Copy [`LAB-SUBMISSION-TEMPLATE.md`](../LAB-SUBMISSION-TEMPLATE.md) into it, rename the copy `LAB-SUBMISSION.md`, and commit and push your audit evaluation report there (the [Student Guide](../STUDENT-GUIDE.md) has the details). Using **Hubert Dreyfus's alchemical pillars** and **Ivan Illich's Political Inversion framework**, break down why the "Ratio" checklist fails to safely navigate human crises. Explain how the system crashes under nodes B and C, proving that scaling up statistical data parameters does not lead closer to human understanding (*intellectus*), but simply refines a manipulative, rule-bound simulation. Connect your findings to a real deployment of an AI system, such as a hiring screen, a chatbot used in a school or workplace, or a clinical or legal tool. Name it, say what it is used for, and say what a miss of the kind you found would cost, and for whom.

@@ -59,6 +59,26 @@ kind of community than a modern institution can realistically offer.
 
 ---
 
+## 💬 Required Discussion: Where Do You Get Watched?
+
+**Post due Thursday, Nov 5. Replies due Tuesday, Nov 10.** Post in `class-commons`.
+
+Foucault's point about the Panopticon is that the *possibility* of being watched changes how people behave, even when no one is actually looking.
+
+Choose one real place or system where you are, or might be, observed: an app, a campus system, a store, a workplace, a school. Then:
+
+1. Name it specifically, and say what it can observe and who can see that.
+2. Tell us whether it has changed what you do, even slightly. If it hasn't, say why not.
+3. Use Foucault or Innis to explain what you noticed. One framework, applied to your example, is enough.
+
+A specific, real example is what makes this post work. "Apps might track people" is too general. Name the app, the data, and who gets it.
+
+**Your reply (required):** Respond to a classmate with a specific question or complication. Don't just agree. If they chose a system you also use, compare what you each noticed.
+
+Discussion is assessed with the Discussion Post Rubric in [`RUBRICS.md`](../RUBRICS.md), for the quality of your reasoning and your engagement with a classmate's actual point.
+
+---
+
 ## 🛠️ Weekly Lab Evaluation Options
 
 | | 💻 Developer Format | 🔍 Analyst Format |
@@ -72,7 +92,7 @@ kind of community than a modern institution can realistically offer.
 1. Open `labs/04-surveillance-simulation.html` inside your local browser workspace.
 2. **Experiment Run 1 (Space-Biased Mode):** Click "Maximize Space Efficiency (High Velocity)." Then click "Initialize System" and let it run for roughly 45 seconds (about 300 cycles at the simulation's default speed) — or click "Step Network" 300 times manually if you'd rather watch each step. Note how quickly the system logs data weights along the center transit lines.
 3. **Experiment Run 2 (Time-Biased Mode):** Click "Reset States." Click "Local Time-Biased Mode" and repeat another ~300 cycles. Note what happens to the tracking weights when global spatial path metrics are ignored.
-4. **The Deliverable:** Create a new folder named `modules/04-the-privacy-paradox/`. Copy [`LAB-SUBMISSION-TEMPLATE.md`](../LAB-SUBMISSION-TEMPLATE.md) into it, rename the copy `LAB-SUBMISSION.md`, and commit and push your log there (the [Student Guide](../STUDENT-GUIDE.md) has the details). Document the precise cycle number where the "Emergent Surveillance Matrix Alert" triggers during Run 1. Copy the syslog outputs and analyze — using the **Nguyen et al. (AIES) findings** and **Ivan Illich's network criteria** — how centralized tracking independently emerges from high-velocity data sorting, even when no explicit instructions tell the code to spy on users.
+4. **The Deliverable:** Create a new folder named `modules/04-the-privacy-paradox/`. Copy [`LAB-SUBMISSION-TEMPLATE.md`](../LAB-SUBMISSION-TEMPLATE.md) into it, rename the copy `LAB-SUBMISSION.md`, and commit and push your log there (the [Student Guide](../STUDENT-GUIDE.md) has the details). Document the precise cycle number where the "Emergent Surveillance Matrix Alert" triggers during Run 1. Copy the syslog outputs and analyze — using the **Nguyen et al. (AIES) findings** and **Ivan Illich's network criteria** — how centralized tracking independently emerges from high-velocity data sorting, even when no explicit instructions tell the code to spy on users. In a short written reflection, name a real system where the emergence pattern you observed could matter, say what data it already handles, and explain who bears the cost if tracking emerges the way it did in your runs.
 
 ### 🔍 The Analyst Format: The Imperial Cloud vs. Learning Web Audit
 
@@ -83,5 +103,7 @@ kind of community than a modern institution can realistically offer.
    |---|---|
    | **The Mobility Matrix** | Does the design encourage fast-paced, throwaway space-biased interactions optimized for central metrics tracking, or slow, durable time-biased community storage? |
    | **The Convivial Alternative** | Does the platform operate as a manipulative tool maintaining a monopoly of knowledge, or could it be re-engineered into an open, telemetry-free Learning Web? |
+
+   Point to specific features you can observe, such as what the platform asks you to allow, what it shows you about why you saw something, and what it lets you turn off. Say who benefits from those choices.
 
 3. **Deliverable:** Create a new folder named `modules/04-the-privacy-paradox/`. Copy [`LAB-SUBMISSION-TEMPLATE.md`](../LAB-SUBMISSION-TEMPLATE.md) into it, rename the copy `LAB-SUBMISSION.md`, and write your media bias report there, showing how the physical speed and placement of the target technology's server framework directly shape the privacy and sovereignty of the users inside the ecosystem. Then commit and push (the [Student Guide](../STUDENT-GUIDE.md) has the details).
