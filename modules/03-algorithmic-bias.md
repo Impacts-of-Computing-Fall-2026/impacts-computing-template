@@ -46,7 +46,7 @@ This manifests clearly in the ACM/AIES discovery of **"Just Noticeable" Bias** (
 
 ```mermaid
 graph TD
-    A["1,000 applicants,<br/>roughly even split by group"] --> B["Tiny -1.6 point penalty<br/>applied to one group only"]
+    A["100,000 applicants,<br/>roughly even split by group"] --> B["Tiny -1.6 point penalty<br/>applied to one group only"]
     B --> C["Sorted and ranked"]
     C --> D["Macro compliance check<br/>(80% threshold rule)"]
     D -->|"✅ PASSES<br/>(deviation too small to trip it)"| E["Legally 'fine'"]
@@ -93,7 +93,7 @@ If you reply to a classmate, respond to their example with a question or a compl
 | **Deliverable** | Script + distribution graph | `LAB-SUBMISSION.md` with both test runs recorded |
 
 ### 💻 The Developer Format: The Just-Noticeable Ranking Audit
-1. Write a script to simulate an institutional recruitment portal that ranks 1,000 applicants based on a synthetic performance score variable.
+1. Write a script to simulate an institutional recruitment portal that ranks 100,000 applicants based on a synthetic performance score variable.
 2. Introduce a hidden "Just Noticeable" loop: inject a minor 1.6-point performance-score penalty that targets candidates passing a non-protected proxy data point (e.g., graduated from a specific array of zip codes). This mirrors the penalty built into `labs/03-bias-simulation.html`, so your results should be directly comparable to the Analyst Format's.
 3. **Deliverable:** Commit your script. Generate an output distribution graph showing how a standard, macro-level compliance audit completely misses this small deviation, while your timeline analysis proves the targeted demographic is entirely stripped of top-10 ranking positions by the end of the pipeline. Along with your script, include a short written reflection (a comment block or a brief companion `LAB-SUBMISSION.md`) connecting your results to Illich's Second Watershed and Alkhathlan et al.'s "Just Noticeable" bias findings — specifically, why a compliance check built around a single threshold number is structurally unable to catch a penalty engineered to stay just under it. In the same reflection, name the Cracked Labs report you chose to read, say what you read in it, and explain how it connects to the work of this module. Save your script, graph, and reflection together in a new folder named `modules/03-algorithmic-bias/` before you commit and push.
 
