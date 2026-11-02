@@ -1,7 +1,7 @@
 # Module 4: The Privacy Paradox, Panopticism, and Digital Empires
 
 ## 📖 Core Readings This Week
-* **Michel Foucault**, *Discipline and Punish* (Part Three: "Panopticism") — [Full text via Monoskop](https://monoskop.org/images/4/43/Foucault_Michel_Discipline_and_Punish_The_Birth_of_the_Prison_1995.pdf)
+* **Michel Foucault**, *Discipline and Punish* (Part Three: "Panopticism") — [Chapter text via libcom.org](https://libcom.org/library/panopticism-michel-foucault)
 * **Harold Innis**, *Empire and Communications* (Chapter 1: "The Bias of Communication") — [Borrow via Internet Archive](https://archive.org/details/biasofcommunicat0000inni)
 * **Ivan Illich**, *Deschooling Society* (1971) — Chapter 6: "Learning Webs" — [Full text via Internet Archive](https://archive.org/details/DeschoolingSociety)
 * **Nguyen, Stoykova & Arazo**, *"Emergent AI Surveillance: Overlearned Person Re-Identification and Its Mitigation in Law Enforcement Context"* (AIES 2025) — [Official proceedings link](https://ojs.aaai.org/index.php/AIES/article/view/36680)
