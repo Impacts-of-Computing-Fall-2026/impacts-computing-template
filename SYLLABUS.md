@@ -192,10 +192,10 @@ All foundational open-source textbooks are freely accessible online:
 * **Lab Operations:** Run `labs/05-alchemy-simulation.html`. Test Dreyfus's cognitive boundaries (*ambiguity tolerance, fringe consciousness*) against systemic data limitations. In your real-world stakes analysis, name a specific real system and say who bears the cost.
 * **Required discussion:** "What does the machine miss?" Post by Sun Nov 22 (before the Thanksgiving recess); reply to a classmate by Tue Dec 1. See the Module 5 file.
 
-#### Capstone — Dec 8 – Dec 18: Independent Capstone Inquiries & Main-Branch Merge
+#### Capstone — Dec 8 – Dec 15: Independent Capstone Inquiries & Main-Branch Merge
 * **The Focus:** Final Exam preparation and production repository commits.
-* **Early groundwork:** The final capstone window is short because the audit builds on work you start earlier. Topic selection and a first source list happen alongside Modules 4 and 5, with dates announced in `class-commons`.
-* **The Mandate:** Complete and submit your Independent Forensic Audit of an active, production-grade algorithmic system. Final deliverables are committed directly to your repository's main branch by the date announced in `class-commons`.
+* **Early groundwork:** The final capstone window is short because the audit builds on work you start earlier. There are two checkpoints during Module 5: your system by Tue Dec 1, and a working claim and first source list by Mon Dec 7. See `modules/06-capstone-audit.md`.
+* **The Mandate:** Complete and submit your Independent Forensic Audit of an active, production-grade algorithmic system. **The capstone is due Tuesday, Dec 15.** Final deliverables are committed directly to your repository's main branch by that date.
 
 ## 🏛️ 7. Core Institutional University Policies
 
